@@ -5,59 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home page</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <header>
-      <img src="images/logo_placeholder.png" alt="Logo placeholder">
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Templates</a></li>
-      </ul>
-    </nav>
-
+    <div class="container">
+    <div class="nav">
+      <img src="images/logo_placeholder.png" alt="Logo placeholder" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Templates</a></li>
+          <li class="create"><a href="#">Create Your Own</a></li>
+          <li class="nav1"><a href="#">About Us</a></li>
+          <li class="nav1"><a href="#">Login/Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="content">
     <section>
-      <h2>Templates</h2>
+
+      <h2 class="templates">Templates</h2>
       <section>
         <h3>Formal</h3>
-        <h4>Template 1</h4>
         <a href="templates/formal1.html">
-          <img src="images/formal_1.png" alt="Formal template first example">
+          <img src="images/formal1.png" alt="Formal template first example" width="250" height="350">
         </a>
-        <h4>Template 2</h4>
         <a href="templates/formal2.html">
-          <img src="images/formal_2.png" alt="Formal template second example">
+          <img src="images/formal2.png" alt="Formal template second example" width="250" height="350">
         </a>
       </section>
+
       <section>
         <h3>Informal</h3>
-        <h4>Template 1</h4>
         <a href="#">
           <img src="image/placeholder.jpg" alt="Informal template first example">
         </a>
-        <h4>Template 2</h4>
         <a href="#">
           <img src="image/placeholder.jpg" alt="Informal template second example">
         </a>
       </section>
+
       <section>
         <h3>Corporate</h3>
-        <h4>Template 1</h4>
         <a href="#">
           <img src="image/placeholder.jpg" alt="Corporate template first example">
         </a>
-        <h4>Template 2</h4>
         <a href="#">
           <img src="image/placeholder.jpg" alt="Corporate template second example">
         </a>
       </section>
+
     </section>
-
-    <footer>
-      <a href="#">About Us</a>
-    </footer>
-
+    </div>
+    <div class="footer">
+      <footer>
+        <ul>
+          <li>
+            <a href="#" class="footer1">Help</a>
+            <a href="#" class="footer1">FAQ</a>
+            <a href="#" class="footer1">Contact: +673 1234567</a>
+            <a href="#" class="footer1">Email: abc@email.com</a>
+            <a href="#" id ="social" class ="fa fa-facebook"></a>
+            <a href="#" id ="social" class ="fa fa-instagram"></a>
+            <a href="#" id ="social" class ="fa fa-twitter"></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>

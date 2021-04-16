@@ -1,19 +1,162 @@
-nav ul {
-  list-style: none;
-  padding: 0;
-  padding-bottom: 20px;
-  margin: 0;
+body{
+  margin: 0px;
+  overflow-x: hidden;
 }
 
-nav ul li {
-  float: left;
-  padding-left: 20px;
+.container{
+  height: 170px;
+  width: 100%;
+  min-width: 1000px;
+  background-color: blue;
+  background-image: linear-gradient(to bottom right, #9ED5F9, #E3A1F8);
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  position: relative;
 }
 
-nav ul li a {
-  text-decoration: none;
+.nav{
+  width: 100%;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
 }
 
-footer {
+.logo{
+  width: 160px;
+  height: 150px;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+}
+
+nav{
+  flex: 1;
+  padding-left:70px;
+  word-spacing: 40px;
   padding-top: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #333;
+}
+
+.nav1{
+  position: relative;
+  left: 850px;
+  word-spacing: normal;
+}
+
+.create{
+  word-spacing: normal;
+}
+
+.templates{
+  height: 50px;
+  width: 400px;
+  background-image: linear-gradient(to right, #5AAFF6, #D2FCF9);
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+}
+
+.content{
+  height: 900px;;
+  width: 100%;
+  background-color: #D2FCF9;
+  margin: 0px;
+}
+
+.footer{
+  height: 200px;
+  width: 100%;
+  min-width: 1000px;
+  background-color: blue;
+  background-image: linear-gradient(to bottom right, #9ED5F9, #E3A1F8);
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.footer{
+  width: 100%;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+footer{
+  flex: 1;
+  padding-left:70px;
+  word-spacing: 50px;
+  padding-top: 20px;
+}
+
+footer ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: #333;
+}
+
+.footer1{
+  word-spacing: normal;
+}
+
+#social{
+  position: relative;
+  left: 850px;
+  padding: 10px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #cd486b;
+  color: white;
 }
