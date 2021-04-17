@@ -5,7 +5,7 @@ body{
 
 .container{
   height: 170px;
-  width: 100%;
+  width: 10000px;
   min-width: 1000px;
   background-color: blue;
   background-image: linear-gradient(to bottom right, #9ED5F9, #E3A1F8);
@@ -31,7 +31,7 @@ body{
   height: 150px;
   cursor: pointer;
   position: relative;
-  top: 5px;
+  top: 27px;
 }
 
 nav{
@@ -77,8 +77,11 @@ nav ul li a{
 .content{
   height: 900px;;
   width: 100%;
-  background-color: #D2FCF9;
   margin: 0px;
+  background-color: #D2FCF9;
+  padding: 10px;
+  position: relative;
+  left: 20px;
 }
 
 .footer{
