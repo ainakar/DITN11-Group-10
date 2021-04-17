@@ -8,7 +8,7 @@ body{
   width: 10000px;
   min-width: 1000px;
   background-color: blue;
-  background-image: linear-gradient(to bottom right, #9ED5F9, #E3A1F8);
+  background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
   background-position: center;
   background-size: cover;
   padding-left: 5%;
@@ -31,7 +31,7 @@ body{
   height: 150px;
   cursor: pointer;
   position: relative;
-  top: 27px;
+  top: 5px;
 }
 
 nav{
@@ -54,7 +54,7 @@ nav ul li a{
 
 .nav1{
   position: relative;
-  left: 350px;
+  left: 800px;
   word-spacing: normal;
 }
 
@@ -74,14 +74,73 @@ nav ul li a{
   padding: 10px;
 }
 
+#Formal{
+  position: relative;
+  left: 400px;
+  top: 20px;
+  font-size: 30px;
+  border: 2px solid black;
+  padding: 10px;
+  width: 100px;
+}
+.formaltemplate1{
+  position: relative;
+  left: 140px;
+  top: 30px;
+}
+.formaltemplate2{
+  position: relative;
+  left: 190px;
+  top: 30px;
+}
+
+#Informal{
+  position: relative;
+  left: 1420px;
+  bottom: 500px;
+  font-size: 30px;
+  border: 2px solid black;
+  padding: 10px;
+  width: 120px;
+}
+.informaltemplate1{
+  position: relative;
+  left: 1200px;
+  bottom: 450px;
+}
+.informaltemplate2{
+  position: relative;
+  left: 1300px;
+  bottom: 450px;
+}
+
+#Corporate{
+  position: relative;
+  left: 900px;
+  top: 20px;
+  font-size: 30px;
+  border: 2px solid black;
+  padding: 10px;
+  width: 140px;
+}
+.corporatetemplate1{
+  position: relative;
+  top: 30px;
+  left: 700px;
+}
+.corporatetemplate2{
+  position: relative;
+  top: 30px;
+  left: 800px;
+}
+
 .content{
-  height: 900px;;
+  height: 1900px;;
   width: 100%;
   margin: 0px;
   background-color: #D2FCF9;
   padding: 10px;
   position: relative;
-  left: 20px;
 }
 
 .footer{
@@ -89,7 +148,7 @@ nav ul li a{
   width: 100%;
   min-width: 1000px;
   background-color: blue;
-  background-image: linear-gradient(to bottom right, #9ED5F9, #E3A1F8);
+  background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
   background-position: center;
   background-size: cover;
   padding-left: 5%;
@@ -131,7 +190,7 @@ footer ul li a{
 
 #social{
   position: relative;
-  left: 350px;
+  left: 800px;
   padding: 10px;
 }
 
