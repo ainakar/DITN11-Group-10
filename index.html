@@ -6,29 +6,29 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="css/index.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
   </head>
   <body>
-    <header>
-    <div class="nav">
-      <img src="images/logo_placeholder.png" alt="Logo placeholder" class="logo">
       <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class = "fas fa-bars"></i>
+        </label>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="#">Templates</a></li>
           <li class="nav1"><a href="templates/createown.html">Create Your Own</a></li>
-          <li class="nav2"><a href="#">About Us</a></li>
-          <li class="nav2"><a href="#">Login/Sign Up</a></li>
+          <li class="nav1"><a href="#">About Us</a></li>
+          <li class="nav1"><a href="#">Login/Sign Up</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
   <div class="content">
     <section>
       <h2 class="templates">TEMPLATES</h2>
 
       <section>
-        <div class="border1">
         <h3 id="Formal">Formal</h3>
+        <div class="box1">
         <a href="templates/formal1.html" class="formaltemplate">
           <img src="images/formal1.png" alt="Formal template first example" width="300" height="400">
         </a>
@@ -39,8 +39,8 @@
       </section>
 
       <section>
-        <div class="border2">
         <h3 id="Informal">Informal</h3>
+        <div class="box2">
         <a href="#" class="informaltemplate">
           <img src="image/placeholder.jpg" alt="Informal template first example">
         </a>
@@ -51,8 +51,8 @@
       </section>
 
       <section>
-        <div class="border3">
         <h3 id="Corporate">Corporate</h3>
+        <div class="box3">
         <a href="#" class="corporatetemplate">
           <img src="image/placeholder.jpg" alt="Corporate template first example">
         </a>
