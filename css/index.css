@@ -1,3 +1,7 @@
+*{
+  box-sizing:border-box;
+}
+
 body{
   margin: 0px;
 }
@@ -24,8 +28,8 @@ header{
   width: 160px;
   height: 150px;
   cursor: pointer;
-  position: relative;
-  top: 15px;
+  display:  flex;
+  justify-content: center;
   margin-left: 100px;
 }
 
@@ -47,8 +51,6 @@ nav ul li a{
 }
 
 .nav2{
-  position: relative;
-  left: 800px;
   word-spacing: normal;
   margin: 0px;
 }
@@ -81,64 +83,55 @@ nav ul li a{
   padding: 10px;
 }
 
+.border1{
+  height: 700px;
+  width: 500px;
+  border: 1px solid black;
+  display: flex;
+  padding: 40px;
+  margin: 10px;
+  overflow:auto;
+  background: lightblue;;
+}
+
 #Formal{
   position: relative;
-  left: 400px;
-  top: 20px;
+  display: block;
   font-size: 30px;
   border: 2px solid black;
   padding: 10px;
-  width: 100px;
+  width: 300px;
+  height: 60px;
+  text-align: center;
 }
-.formaltemplate1{
-  position: relative;
-  left: 140px;
-  top: 30px;
-}
-.formaltemplate2{
-  position: relative;
-  left: 190px;
-  top: 30px;
+.formaltemplate{
+  display:block;
+ padding-left: 10px;
+ padding-right: 10px;
+ width: 50%;
 }
 
 #Informal{
   position: relative;
-  left: 1420px;
-  bottom: 500px;
-  font-size: 30px;
-  border: 2px solid black;
-  padding: 10px;
-  width: 120px;
-}
-.informaltemplate1{
-  position: relative;
-  left: 1200px;
-  bottom: 450px;
-}
-.informaltemplate2{
-  position: relative;
-  left: 1300px;
-  bottom: 450px;
-}
-
-#Corporate{
-  position: relative;
-  left: 900px;
-  top: 20px;
   font-size: 30px;
   border: 2px solid black;
   padding: 10px;
   width: 140px;
 }
-.corporatetemplate1{
+.informaltemplate{
   position: relative;
-  top: 30px;
-  left: 700px;
 }
-.corporatetemplate2{
+
+
+#Corporate{
   position: relative;
-  top: 30px;
-  left: 800px;
+  font-size: 30px;
+  border: 2px solid black;
+  padding: 10px;
+  width: 160px;
+}
+.corporatetemplate{
+  position: relative;
 }
 
 /*-Creating own ecard section*/
@@ -223,15 +216,14 @@ footer ul li a{
 /*social media icons*/
 #social{
   position: relative;
-  left: 750px;
   padding: 10px;
 }
 
 .fa {
   padding: 20px;
   font-size: 20px;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
