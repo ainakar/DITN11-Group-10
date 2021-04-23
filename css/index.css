@@ -39,7 +39,7 @@ nav ul li a{
 }
 
 a.active,a:hover{
-  background: lightblue;
+  background: #F99FA6;
   transition: 0.5s;
 }
 
@@ -59,7 +59,7 @@ a.active,a:hover{
 
 @media (max-width: 952px){
   nav ul li a{
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (max-width: 858px){
@@ -75,7 +75,6 @@ a.active,a:hover{
     left: -100%;
     text-align: center;
     transition: all 0.5s;
-    opacity: 0.8;
   }
   nav ul li{
     display: block;
@@ -125,11 +124,13 @@ a.active,a:hover{
 }
 
 .box1{
+  position: relative;
+  bottom: 30px;
   height: 700px;
-  width: 500px;
+  width: 40%;
   border: 1px solid black;
   padding: 40px;
-  margin-left: 90px;
+  margin-left: 60px;
   overflow: auto;
   background: lightblue;;
   text-align: center;
@@ -141,8 +142,8 @@ a.active,a:hover{
   font-size: 30px;
   border: 2px solid black;
   padding: 10px;
-  margin-left: 170px;
-  width: 300px;
+  margin-left: 60px;
+  width: 40%;
   height: 60px;
   text-align: center;
 }
@@ -155,11 +156,12 @@ a.active,a:hover{
 }
 
 .box2{
+  position: relative;
   height: 700px;
-  width: 500px;
+  width: 40%;
   border: 1px solid black;
   padding: 40px;
-  margin: 10px;
+  margin-left: 60px;
   overflow: auto;
   background: lightblue;;
   text-align: center;
@@ -167,31 +169,35 @@ a.active,a:hover{
 
 #Informal{
   position: relative;
+  float: right;
+  bottom: 820px;
   display: block;
   font-size: 30px;
   border: 2px solid black;
   padding: 10px;
-  width: 300px;
+  margin-right: 60px;
+  width: 40%;
   height: 60px;
   text-align: center;
 }
 
 .informaltemplate{
   display:inline-block;
+  position: relative;
+  float: right;
   padding-top: 10px;
   width: 100%;
   text-align: center;
-
 }
 
 .box3{
   height: 700px;
-  width: 500px;
+  width: 40%;
   border: 1px solid black;
   padding: 40px;
-  margin: 10px;
+  margin-left: 90px;
   overflow: auto;
-  background: lightblue;
+  background: lightblue;;
   text-align: center;
 }
 
@@ -201,7 +207,8 @@ a.active,a:hover{
   font-size: 30px;
   border: 2px solid black;
   padding: 10px;
-  width: 300px;
+  margin-left: 300px;
+  width: 40%;
   height: 60px;
   text-align: center;
 }
@@ -214,11 +221,10 @@ a.active,a:hover{
 
 /*-Creating own ecard section*/
 .Section2{
-  height: 400px;
+  height: 350px;
   width: 100%;
   background-color: #F99FA6;
   position: relative;
-  top: 600px;
 }
 .createown{
   text-align: center;
@@ -248,47 +254,42 @@ a.active,a:hover{
 }
 
 /*Footer section*/
-.footer{
-  height: 200px;
-  width: 100%;
-  background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
-  background-position: center;
-  background-size: cover;
-  padding-left: 5%;
-  padding-right: 5%;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.footer{
-  width: 100%;
-  height: 15vh;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-}
-
 footer{
-  flex: 1;
-  padding-left:70px;
-  word-spacing: 50px;
-  padding-top: 20px;
+  background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
+  height: 120px;
+  width: 100%;
+  word-spacing: 20px;
+}
+
+footer ul{
+  float: right;
+  margin-right: 100px;
 }
 
 footer ul li{
   display: inline-block;
-  list-style: none;
-  margin: 0px 20px;
+  line-height: 80px;
+  margin: 0px 5px;
 }
 
 footer ul li a{
+  font-size: 14px;
   text-decoration: none;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
   color: #333;
 }
 
 .footer1{
   word-spacing: normal;
+}
+
+@media (max-width: 858px){
+  footer ul li a{
+    font-size: 12px;
+    word-spacing: 10px;
+  }
 }
 
 /*social media icons*/
