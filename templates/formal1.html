@@ -3,86 +3,107 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  </head>
     <style media="screen">
+    *{
+      box-sizing:border-box;
+    }
+
     body{
       margin: 0px;
-      overflow-x: auto;
-    }
-
-    .container{
-    height: 600px;
-    width: 450px;
-    background-image: url(images/813560.jpg);
-    background-position: center;
-    background-size: cover;
-    margin: auto;
-    box-sizing: border-box;
-    position: relative;
-    opacity: 0.9;
-    }
-
-    header{
-      height: 170px;
-      width: 100%;
-      background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
-      background-position: center;
-      background-size: cover;
-      padding-left: 5%;
-      padding-right: 5%;
-      box-sizing: border-box;
-      position: relative;
-    }
-
-    .nav{
-      width: 100%;
-      height: 15vh;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      font-size: 18px;
-    }
-
-    .logo{
-      width: 160px;
-      height: 150px;
-      cursor: pointer;
-      position: relative;
-      top: 10px;
-      padding-left: 50px;
     }
 
     nav{
-      flex: 1;
-      padding-left:70px;
-      word-spacing: 40px;
-      padding-top: 20px;
+      background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
+      height: 120px;
+      width: 100%;
+      word-spacing: 30px;
+    }
+
+    nav ul{
+      float: right;
+      margin-right: 70px;
     }
 
     nav ul li{
       display: inline-block;
-      list-style: none;
-      margin: 0px 20px;
+      line-height: 80px;
+      margin: 0px 5px;
     }
 
     nav ul li a{
+      font-size: 17px;
       text-decoration: none;
+      text-transform: uppercase;
+      padding: 7px 13px;
+      border-radius: 3px;
       color: #333;
-    }
-
-    .nav2{
-      position: relative;
-      left: 800px;
-      word-spacing: normal;
     }
 
     .nav1{
       word-spacing: normal;
     }
 
+    a.active,a:hover{
+      transition: 0.5s;
+    }
+
+    .checkbtn{
+      font-size: 30px;
+      color: white;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+
+    #check{
+      display: none;
+    }
+
+    @media (max-width: 952px){
+      nav ul li a{
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 858px){
+      .checkbtn{
+        display: block;
+      }
+      ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: lightpink;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 9;
+      }
+      nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 50px;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.active{
+        background: none;
+        color: green;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
+    }
+
     .box{
-      height: 510px;
-      width: 370px;
-      margin: 40px 40px 40px 40px;
+      height: 710px;
+      width: 470px;
+      margin: 40px;
       border: 3px solid black;
       background-color: white;
       opacity: 0.9;
@@ -91,55 +112,55 @@
     }
     .title{
       font-family: 'Great Vibes', cursive;
-      font-size: 50px;
+      font-size: 60px;
       position: relative;
-      left: 100px;
+      left: 140px;
     }
     .of{
       font-family: 'Great Vibes', cursive;
-      font-size: 25px;
+      font-size: 35px;
       position: relative;
-      left: 170px;
+      left: 220px;
       bottom: 35px;
     }
     .name1{
       font-family: 'Great Vibes', cursive;
-      font-size: 25px;
+      font-size: 35px;
       position: relative;
-      left: 150px;
+      left: 190px;
       bottom: 30px;
     }
     .and{
       font-family: 'Great Vibes', cursive;
-      font-size: 15px;
+      font-size: 25px;
       position: relative;
-      left: 175px;
-      bottom: 115px;
+      left: 220px;
+      bottom: 150px;
     }
     .date{
       font-family: 'Great Vibes', cursive;
-      font-size: 20px;
+      font-size: 30px;
       position: relative;
-      left: 155px;
+      left: 200px;
       bottom: 70px;
     }
     .time{
       font-family: 'Great Vibes', cursive;
-      font-size: 20px;
+      font-size: 30px;
       position: relative;
-      left: 155px;
+      left: 200px;
       bottom: 95px;
     }
     .place{
       font-family: 'Great Vibes', cursive;
-      font-size: 20px;
+      font-size: 30px;
       position: relative;
-      left: 155px;
+      left: 200px;
       bottom: 85px;
     }
 
     .content{
-      height: 1000px;;
+      height: 1200px;
       width: 100%;
       margin: 0px;
       background-color: #D2FCF9;
@@ -147,43 +168,56 @@
       position: relative;
     }
 
-    .footer{
-      height: 200px;
-      width: 100%;
-      background-color: blue;
-      background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
+    .container{
+      height: 800px;
+      width: 550px;
+      position: relative;
+      bottom: 20px;
+      background-image: url(images/813560.jpg);
       background-position: center;
       background-size: cover;
-      padding-left: 5%;
-      padding-right: 5%;
+      margin: 90px;
       box-sizing: border-box;
       position: relative;
+      opacity: 0.9;
     }
 
-    .footer{
-      width: 100%;
-      height: 15vh;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      font-size: 18px;
+    @media (max-width: 858px){
+      .container{
+        height: 700px;
+        width: 500px;
+      }
+      .box{
+        height: 610px;
+        width: 420px;
+      }
     }
 
     footer{
-      flex: 1;
-      padding-left:70px;
-      word-spacing: 50px;
-      padding-top: 20px;
+      background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
+      height: 130px;
+      width: 100%;
+      word-spacing: 30px;
+      position: relative;
+    }
+
+    footer ul{
+      float: right;
+      margin-right: 100px;
     }
 
     footer ul li{
       display: inline-block;
-      list-style: none;
-      margin: 0px 20px;
+      line-height: 80px;
+      margin: 0px 5px;
     }
 
     footer ul li a{
+      font-size: 18px;
       text-decoration: none;
+      text-transform: uppercase;
+      padding: 7px 13px;
+      border-radius: 3px;
       color: #333;
     }
 
@@ -191,17 +225,24 @@
       word-spacing: normal;
     }
 
+    @media (max-width: 952px){
+      footer ul li a{
+        font-size: 14px;
+        word-spacing: 20px;
+      }
+    }
+
     #social{
       position: relative;
-      left: 800px;
       padding: 10px;
+
     }
 
     .fa {
       padding: 20px;
       font-size: 20px;
-      width: 20px;
-      height: 20px;
+      width: 40px;
+      height: 40px;
       text-align: center;
       text-decoration: none;
       border-radius: 50%;
@@ -214,6 +255,7 @@
     .fa-facebook {
       background: #3B5998;
       color: white;
+      margin-left: 200px;
     }
 
     .fa-twitter {
@@ -230,20 +272,20 @@
     <title></title>
   </head>
   <body>
-    <header>
-      <div class="nav">
-      <img src="images/logo_placeholder.png" alt="Logo placeholder" class="logo">
     <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class = "fas fa-bars"></i>
+      </label>
       <ul>
-        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html" class="active">Home</a></li>
         <li><a href="#">Templates</a></li>
-        <li class="nav1"><a href="#">Create Your Own</a></li>
-        <li class="nav2"><a href="#">About Us</a></li>
-        <li class="nav2"><a href="#">Login/Sign Up</a></li>
+        <li class="nav1"><a href="templates/createown.html">Create Your Own</a></li>
+        <li class="nav1"><a href="#">About Us</a></li>
+        <li class="nav1"><a href="#">Login/Sign Up</a></li>
       </ul>
     </nav>
-    </div>
-    </header>
+
 <div class="content">
     <div class="container">
       <div class="box">
