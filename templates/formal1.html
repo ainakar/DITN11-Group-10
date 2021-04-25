@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="formal1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
   </head>
@@ -114,48 +116,41 @@
       font-family: 'Great Vibes', cursive;
       font-size: 60px;
       position: relative;
-      left: 140px;
     }
     .of{
       font-family: 'Great Vibes', cursive;
       font-size: 35px;
       position: relative;
-      left: 220px;
-      bottom: 35px;
+      bottom: 40px;
     }
     .name1{
       font-family: 'Great Vibes', cursive;
       font-size: 35px;
       position: relative;
-      left: 190px;
       bottom: 30px;
     }
     .and{
       font-family: 'Great Vibes', cursive;
       font-size: 25px;
       position: relative;
-      left: 220px;
       bottom: 150px;
     }
     .date{
       font-family: 'Great Vibes', cursive;
       font-size: 30px;
       position: relative;
-      left: 200px;
       bottom: 70px;
     }
     .time{
       font-family: 'Great Vibes', cursive;
       font-size: 30px;
       position: relative;
-      left: 200px;
       bottom: 95px;
     }
     .place{
       font-family: 'Great Vibes', cursive;
       font-size: 30px;
       position: relative;
-      left: 200px;
       bottom: 85px;
     }
 
@@ -166,6 +161,9 @@
       background-color: #D2FCF9;
       padding: 10px;
       position: relative;
+      display: flex;
+      text-align: center;
+      justify-content: center;
     }
 
     .container{
@@ -177,9 +175,12 @@
       background-position: center;
       background-size: cover;
       margin: 90px;
-      box-sizing: border-box;
-      position: relative;
       opacity: 0.9;
+      align-items: center;
+    }
+
+    .main{
+      margin-top: 100px;
     }
 
     @media (max-width: 858px){
@@ -268,6 +269,30 @@
       color: white;
     }
 
+    .form{
+      float: right;
+      margin-left: 50px;
+      position: relative;
+      top: 350px;
+      width: 300px;
+      height: 450px;
+      border: 2px solid black;
+      background: lightpink;
+      padding: 50px;
+      padding-top: 20px;
+      font-size: 20px;
+    }
+
+    input{
+      height: 40px;
+    }
+
+    button{
+      height: 30px;
+      width: 100px;
+      font-size: 20px;
+    }
+
     </style>
     <title></title>
   </head>
@@ -287,6 +312,7 @@
     </nav>
 
 <div class="content">
+  <div class="main">
     <div class="container">
       <div class="box">
         <p class="title">Wedding <br> Ceremony</p>
@@ -299,6 +325,29 @@
       </div>
     </div>
     </div>
+
+    <div class="form">
+      <label>Heading:</label>
+      <input type="text" id="heading" placeholder="e.g Wedding Ceremony" size="25"> <br>
+
+      <label>Name 1:</label>
+      <input type="text" id="name1" placeholder="Enter name 1" size="25"><br>
+
+      <label>Name 2:</label>
+      <input type="text" id="name2" placeholder="Enter name 2" size="25"><br>
+
+      <label>Date:</label>
+      <input type="text" id="date" placeholder="Enter date" size="25"><br>
+
+      <label>Time:</label>
+      <input type="text" id="time" placeholder="Enter time" size="25"><br>
+
+      <label>Place:</label>
+      <input type="text" id="place" placeholder="Enter place" size="25"><br>
+
+      <button type="button" id="entry">Submit!</button>
+    </div>
+  </div>
 
     <div class="footer">
       <footer>
