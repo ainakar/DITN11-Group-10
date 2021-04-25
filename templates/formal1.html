@@ -3,10 +3,32 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="formal1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-  </head>
+    <script>
+    function changeMe(){
+      var heading = document.getElementById("heading").value;
+      var name1 = document.getElementById("name1").value;
+      var name2 = document.getElementById("name2").value;
+      var date = document.getElementById("date").value;
+      var time = document.getElementById("time").value;
+      var place = document.getElementById("place").value;
+
+      var myBox1 = document.getElementById("Title");
+      myBox1.innerHTML = heading;
+      var myBox2 = document.getElementById("Name1");
+      myBox2.innerHTML = name1;
+      var myBox3 = document.getElementById("Name2");
+      myBox3.innerHTML = name2;
+      var myBox4 = document.getElementById("Date");
+      myBox4.innerHTML = date;
+      var myBox5 = document.getElementById("Time");
+      myBox5.innerHTML = time;
+      var myBox6 = document.getElementById("Place");
+      myBox6.innerHTML = place;
+}
+    </script>
+
     <style media="screen">
     *{
       box-sizing:border-box;
@@ -16,6 +38,7 @@
       margin: 0px;
     }
 
+/*whole nav section*/
     nav{
       background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
       height: 120px;
@@ -35,7 +58,7 @@
     }
 
     nav ul li a{
-      font-size: 17px;
+      font-size: 18px;
       text-decoration: none;
       text-transform: uppercase;
       padding: 7px 13px;
@@ -75,7 +98,7 @@
         display: block;
       }
       ul{
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100vh;
         background: lightpink;
@@ -101,7 +124,7 @@
         left: 0;
       }
     }
-
+/* e-card section */
     .box{
       height: 710px;
       width: 470px;
@@ -112,48 +135,89 @@
       position: relative;
       top: 40px;
     }
-    .title{
+    #Title{
       font-family: 'Great Vibes', cursive;
       font-size: 60px;
       position: relative;
+      height: 150px;
+      width: 300px;
+      border: 1px solid black;
+      margin-left: 90px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      border-style: hidden;
     }
     .of{
       font-family: 'Great Vibes', cursive;
-      font-size: 35px;
+      font-size: 30px;
       position: relative;
-      bottom: 40px;
+      bottom: 50px;
+      margin-top: 70px;
     }
-    .name1{
+    #Name1{
       font-family: 'Great Vibes', cursive;
       font-size: 35px;
       position: relative;
-      bottom: 30px;
+      bottom: 50px;
+      height: 50px;
+      width: 230px;
+      border: 1px solid black;
+      margin-left: 120px;
+      border-style: hidden;
     }
     .and{
       font-family: 'Great Vibes', cursive;
       font-size: 25px;
       position: relative;
-      bottom: 150px;
-    }
-    .date{
-      font-family: 'Great Vibes', cursive;
-      font-size: 30px;
-      position: relative;
-      bottom: 70px;
-    }
-    .time{
-      font-family: 'Great Vibes', cursive;
-      font-size: 30px;
-      position: relative;
-      bottom: 95px;
-    }
-    .place{
-      font-family: 'Great Vibes', cursive;
-      font-size: 30px;
-      position: relative;
-      bottom: 85px;
+      bottom: 100px;
     }
 
+    #Name2{
+      font-family: 'Great Vibes', cursive;
+      font-size: 35px;
+      position: relative;
+      top: 30px;
+      height: 50px;
+      width: 230px;
+      border: 1px solid black;
+      margin-left: 120px;
+      border-style: hidden;
+    }
+    #Date{
+      font-family: 'Great Vibes', cursive;
+      font-size: 30px;
+      position: relative;
+      bottom: 30px;
+      height: 40px;
+      width: 150px;
+      border: 1px solid black;
+      margin-left: 160px;
+      border-style: hidden;
+    }
+    #Time{
+      font-family: 'Great Vibes', cursive;
+      font-size: 30px;
+      position: relative;
+      bottom: 20px;
+      height: 40px;
+      width: 150px;
+      border: 1px solid black;
+      margin-left: 160px;
+      border-style: hidden;
+    }
+    #Place{
+      font-family: 'Great Vibes', cursive;
+      font-size: 30px;
+      position: relative;
+      top: 15px;
+      height: 40px;
+      width: 180px;
+      border: 1px solid black;
+      margin-left: 140px;
+      border-style: hidden;
+    }
+
+/* whole content sec */
     .content{
       height: 1200px;
       width: 100%;
@@ -194,6 +258,7 @@
       }
     }
 
+/* footer section */
     footer{
       background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
       height: 130px;
@@ -226,17 +291,17 @@
       word-spacing: normal;
     }
 
-    @media (max-width: 952px){
+    @media (max-width: 870px){
       footer ul li a{
         font-size: 14px;
         word-spacing: 20px;
       }
     }
 
+/* social media */
     #social{
       position: relative;
       padding: 10px;
-
     }
 
     .fa {
@@ -269,13 +334,14 @@
       color: white;
     }
 
+/* form section */
     .form{
       float: right;
       margin-left: 50px;
       position: relative;
       top: 350px;
       width: 300px;
-      height: 450px;
+      height: 480px;
       border: 2px solid black;
       background: lightpink;
       padding: 50px;
@@ -291,11 +357,13 @@
       height: 30px;
       width: 100px;
       font-size: 20px;
+      position: relative;
+      top: 20px;
     }
 
     </style>
+    </head>
     <title></title>
-  </head>
   <body>
     <nav>
       <input type="checkbox" id="check">
@@ -315,13 +383,14 @@
   <div class="main">
     <div class="container">
       <div class="box">
-        <p class="title">Wedding <br> Ceremony</p>
+        <div id="Title">Wedding Ceremony</div>
         <p class="of">of</p>
-        <p class="name1">Name <br><br> Name</p>
+        <div id="Name1">John Doe</div>
+        <div id="Name2">Jane Doe</div>
         <p class="and">&</p>
-        <p class="date">Date</p>
-        <p class="time">Time</p>
-        <p class="place">Place</p>
+        <div id="Date">3 May 2021</div>
+        <div id="Time">12pm</div>
+        <div id="Place">JP Amphitheatre</div>
       </div>
     </div>
     </div>
@@ -345,7 +414,7 @@
       <label>Place:</label>
       <input type="text" id="place" placeholder="Enter place" size="25"><br>
 
-      <button type="button" id="entry">Submit!</button>
+      <button type="button" onclick="changeMe()" id="entry">Submit!</button>
     </div>
   </div>
 
@@ -364,6 +433,5 @@
         </ul>
       </footer>
     </div>
-
   </body>
 </html>
