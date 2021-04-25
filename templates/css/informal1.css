@@ -16,13 +16,13 @@
 #cover-title {
   color: black;
   font-family: Courier;
-  font-size: 12pt;
+  font-size: 2em;
   text-align: center;
 }
 
-#cover-pic {
-  width: 150px;
-  height: 150px;
+#deco {
+  width: 350px;
+  height: auto;
 }
 
 #inside {
@@ -37,6 +37,5 @@
 #inside-title {
   color: black;
   font-family: Courier;
-  font-size: 12pt;
   text-align: center;
 }
