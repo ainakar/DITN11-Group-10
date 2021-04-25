@@ -1,7 +1,7 @@
 #cover {
-  z-index: 1; /*appears in front*/
+  z-index: 1;
   position: absolute;
-  background-color: #FFCECD;
+  background-color: #2B324D;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -14,10 +14,14 @@
 }
 
 #cover-title {
-  color: black;
+  color: #F22E3E;
   font-family: Courier;
   font-size: 2em;
   text-align: center;
+}
+
+.details {
+  color: #AAC8FF;
 }
 
 #deco {
@@ -28,7 +32,7 @@
 #inside {
   z-index: 0;
   position: absolute;
-  background-color: white;
+  background-color: #F3E8DA;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -38,4 +42,9 @@
   color: black;
   font-family: Courier;
   text-align: center;
+}
+
+#inside-pic {
+  width: auto;
+  height: 480px;
 }
