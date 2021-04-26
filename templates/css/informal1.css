@@ -93,7 +93,6 @@ a.active,a:hover{
   }
 }
 
-
 /* footer section */
     footer{
       background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
@@ -134,8 +133,6 @@ a.active,a:hover{
         word-spacing: 20px;
       }
     }
-
-
 
 #cover {
   z-index: 5; /*appears in front*/
