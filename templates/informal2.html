@@ -3,9 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="css/informal2.css">
   </head>
   <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class = "fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="../index.html" class="active">Home</a></li>
+        <li><a href="#">Templates</a></li>
+        <li class="nav1"><a href="templates/createown.html">Create Your Own</a></li>
+        <li class="nav1"><a href="#">About Us</a></li>
+        <li class="nav1"><a href="#">Login/Sign Up</a></li>
+      </ul>
+    </nav>
+
     <div id="cover">
 
       <p id="cover-title">
@@ -44,6 +59,19 @@
         <button onclick="close_card()">Click to close</button>
       </p>
 
+    </div>
+
+    <div class="footer">
+      <footer>
+        <ul>
+          <li>
+            <a href="#" class="footer1">Help</a>
+            <a href="#" class="footer1">FAQ</a>
+            <a href="#" class="footer1">Contact: +673 1234567</a>
+            <a href="#" class="footer1">Email: abc@email.com</a>
+          </li>
+        </ul>
+      </footer>
     </div>
 
     <script src="js/informal2.js"></script>

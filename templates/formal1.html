@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <script>
     function changeMe(){
@@ -88,7 +87,7 @@
       display: none;
     }
 
-    @media (max-width: 952px){
+    @media (max-width: 1050px){
       nav ul li a{
         font-size: 14px;
       }
@@ -217,19 +216,6 @@
       border-style: hidden;
     }
 
-/* whole content sec */
-    .content{
-      height: 1200px;
-      width: 100%;
-      margin: 0px;
-      background-color: #D2FCF9;
-      padding: 10px;
-      position: relative;
-      display: flex;
-      text-align: center;
-      justify-content: center;
-    }
-
     .container{
       height: 800px;
       width: 550px;
@@ -244,17 +230,69 @@
     }
 
     .main{
-      margin-top: 100px;
+      margin-top: 30px;
     }
 
-    @media (max-width: 858px){
-      .container{
-        height: 700px;
-        width: 500px;
+
+
+/* whole content sec */
+    .content{
+      height: 1200px;
+      width: 100%;
+      margin: 0px;
+      background-color: #D2FCF9;
+      padding: 10px;
+      position: relative;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .save{
+      border: 2px solid black;
+      width: 200px;
+      height: 100px;
+      background-color: lightpink;
+      position: relative;
+      top: 700px;
+      right: 250px;
+    }
+
+    .save1{
+      font-size: 20px;
+      position: relative;
+      top: 20px;
+    }
+
+    #button1{
+      width: 70px;
+      height: 30px;
+      font-size: 15px;
+      position: relative;
+      top: 30px;
+    }
+
+    @media (max-width: 1050px){
+      .main{
+        width: 400px;
+        height: 650px;
+        margin-left: 110px;
       }
-      .box{
-        height: 610px;
-        width: 420px;
+      .content{
+        height: 1600px;
+      }
+      .formsec{
+        position: relative;
+        top: 750px;
+        right: 250px;
+      }
+      .save{
+        position: relative;
+        top: 1330px;
+        right: 200px;
+      }
+      .save1{
+        font-size: 16px;
       }
     }
 
@@ -291,55 +329,20 @@
       word-spacing: normal;
     }
 
-    @media (max-width: 870px){
+    @media (max-width: 1050px){
       footer ul li a{
         font-size: 14px;
         word-spacing: 20px;
       }
     }
 
-/* social media */
-    #social{
-      position: relative;
-      padding: 10px;
-    }
-
-    .fa {
-      padding: 20px;
-      font-size: 20px;
-      width: 40px;
-      height: 40px;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 50%;
-    }
-
-    .fa:hover {
-        opacity: 0.7;
-    }
-
-    .fa-facebook {
-      background: #3B5998;
-      color: white;
-      margin-left: 200px;
-    }
-
-    .fa-twitter {
-      background: #55ACEE;
-      color: white;
-    }
-
-    .fa-instagram {
-      background: #cd486b;
-      color: white;
-    }
 
 /* form section */
     .form{
       float: right;
       margin-left: 50px;
       position: relative;
-      top: 350px;
+      top: 200px;
       width: 300px;
       height: 480px;
       border: 2px solid black;
@@ -356,7 +359,7 @@
     button{
       height: 30px;
       width: 100px;
-      font-size: 20px;
+      font-size: 15px;
       position: relative;
       top: 20px;
     }
@@ -372,7 +375,7 @@
       </label>
       <ul>
         <li><a href="../index.html" class="active">Home</a></li>
-        <li><a href="#">Templates</a></li>
+        <li><a href="../index.html">Templates</a></li>
         <li class="nav1"><a href="templates/createown.html">Create Your Own</a></li>
         <li class="nav1"><a href="#">About Us</a></li>
         <li class="nav1"><a href="#">Login/Sign Up</a></li>
@@ -395,6 +398,7 @@
     </div>
     </div>
 
+<div class="formsec">
     <div class="form">
       <label>Heading:</label>
       <input type="text" id="heading" placeholder="e.g Wedding Ceremony" size="25"> <br>
@@ -418,6 +422,12 @@
     </div>
   </div>
 
+  <div class="save">
+    <div class="save1">Save this template</div>
+    <button type="button" id="button1">Save</button>
+  </div>
+  </div>
+
     <div class="footer">
       <footer>
         <ul>
@@ -426,9 +436,6 @@
             <a href="#" class="footer1">FAQ</a>
             <a href="#" class="footer1">Contact: +673 1234567</a>
             <a href="#" class="footer1">Email: abc@email.com</a>
-            <a href="#" id ="social" class ="fa fa-facebook"></a>
-            <a href="#" id ="social" class ="fa fa-instagram"></a>
-            <a href="#" id ="social" class ="fa fa-twitter"></a>
           </li>
         </ul>
       </footer>

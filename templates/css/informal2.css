@@ -1,5 +1,144 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin: 0px;
+}
+
+/*whole nav section*/
+nav{
+  background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
+  height: 120px;
+  width: 100%;
+  word-spacing: 30px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 70px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px 5px;
+}
+
+nav ul li a{
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+  color: #333;
+}
+
+.nav1{
+  word-spacing: normal;
+}
+
+a.active,a:hover{
+  transition: 0.5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
+  nav ul li a{
+    font-size: 14px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: lightpink;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 9;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 50px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: green;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+/* footer section */
+    footer{
+      background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
+      height: 130px;
+      width: 100%;
+      word-spacing: 30px;
+      position: relative;
+      z-index: 5;
+    }
+
+    footer ul{
+      float: right;
+      margin-right: 100px;
+    }
+
+    footer ul li{
+      display: inline-block;
+      line-height: 80px;
+      margin: 0px 5px;
+    }
+
+    footer ul li a{
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 7px 13px;
+      border-radius: 3px;
+      color: #333;
+    }
+
+    .footer1{
+      word-spacing: normal;
+    }
+
+    @media (max-width: 858px){
+      footer ul li a{
+        font-size: 14px;
+        word-spacing: 20px;
+      }
+    }
+
+
+
+
 #cover {
-  z-index: 1;
+  z-index: 5;
   position: absolute;
   background-color: #2B324D;
   width: 100%;
@@ -31,11 +170,12 @@
 
 #inside {
   z-index: 0;
-  position: absolute;
+  position: relative;
   background-color: #F3E8DA;
   width: 100%;
-  height: 100%;
+  height: 900px;
   text-align: center;
+  padding-top: 50px;
 }
 
 #inside-title {

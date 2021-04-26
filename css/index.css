@@ -57,7 +57,7 @@ a.active,a:hover{
   display: none;
 }
 
-@media (max-width: 952px){
+@media (max-width: 1050px){
   nav ul li a{
     font-size: 14px;
   }
@@ -148,6 +148,7 @@ a.active,a:hover{
   display: flex;
   text-align: center;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .box2{
@@ -181,24 +182,24 @@ a.active,a:hover{
 
 .informaltemplate{
   position: relative;
-  float: right;
-  padding-top: 10px;
   width: 100%;
   display: flex;
   text-align: center;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .box3{
+  position: relative;
+  bottom: 30px;
   height: 700px;
   width: 40%;
   border: 1px solid black;
   padding: 40px;
-  margin-left: 90px;
+  margin-left: 60px;
   overflow: auto;
   background: lightblue;;
-  position: absolute;
-  bottom: 520px;
+  text-align: center;
 }
 
 #Corporate{
@@ -207,18 +208,18 @@ a.active,a:hover{
   font-size: 30px;
   border: 2px solid black;
   padding: 10px;
+  margin-left: 60px;
   width: 40%;
   height: 60px;
   text-align: center;
-  justify-content:center;
 }
 .corporatetemplate{
-  display:inline-block;
-  padding-top: 10px;
+  position: relative;
   width: 100%;
   display: flex;
   text-align: center;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 /*-Creating own ecard section*/
@@ -286,46 +287,4 @@ footer ul li a{
 
 .footer1{
   word-spacing: normal;
-}
-
-@media (max-width: 858px){
-  footer ul li a{
-    font-size: 12px;
-    word-spacing: 10px;
-  }
-}
-
-/*social media icons*/
-#social{
-  position: relative;
-  padding: 10px;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 20px;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-instagram {
-  background: #cd486b;
-  color: white;
 }
