@@ -150,18 +150,18 @@ a.active,a:hover{
 }
 
 #cover-title {
-  color: #F22E3E;
+  color: white;
   font-family: Courier;
   font-size: 2em;
   text-align: center;
 }
 
 .details {
-  color: #AAC8FF;
+  color: white;
 }
 
 #deco {
-  width: 350px;
+  width: 450px;
   height: auto;
 }
 
@@ -183,5 +183,5 @@ a.active,a:hover{
 
 #inside-pic {
   width: auto;
-  height: 480px;
+  height: 450px;
 }

@@ -157,7 +157,12 @@ a.active,a:hover{
 }
 
 #deco {
-  width: 350px;
+  width: 450px;
+  height: auto;
+}
+
+#profile {
+  width: 180px;
   height: auto;
 }
 
@@ -176,3 +181,7 @@ a.active,a:hover{
   font-family: Courier;
   text-align: center;
 }
+
+/* #inside-pic {
+
+} */
