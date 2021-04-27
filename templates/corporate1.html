@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script>
+    function changeMe(){
+      var company = document.getElementById("company").value;
+      var event = document.getElementById("event").value;
+      var text = document.getElementById("text").value;
+      var date = document.getElementById("date").value;
+      var time = document.getElementById("time").value;
+      var place = document.getElementById("place").value;
+
+      var myBox1 = document.getElementById("Company");
+      myBox1.innerHTML = company;
+      var myBox2 = document.getElementById("Event");
+      myBox2.innerHTML = event;
+      var myBox3 = document.getElementById("Text");
+      myBox3.innerHTML = text;
+      var myBox4 = document.getElementById("Date");
+      myBox4.innerHTML = date;
+      var myBox5 = document.getElementById("Time");
+      myBox5.innerHTML = time;
+      var myBox6 = document.getElementById("Place");
+      myBox6.innerHTML = place;
+}
+//     </script>
+
+    <style media="screen">
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin: 0px;
+    }
+
+/*whole nav section*/
+    nav{
+      background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
+      height: 120px;
+      width: 100%;
+      word-spacing: 30px;
+    }
+
+    nav ul{
+      float: right;
+      margin-right: 70px;
+    }
+
+    nav ul li{
+      display: inline-block;
+      line-height: 80px;
+      margin: 0px 5px;
+    }
+
+    nav ul li a{
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 7px 13px;
+      border-radius: 3px;
+      color: #333;
+    }
+
+    .nav1{
+      word-spacing: normal;
+    }
+
+    a.active,a:hover{
+      transition: 0.5s;
+    }
+
+    .checkbtn{
+      font-size: 30px;
+      color: white;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+
+    #check{
+      display: none;
+    }
+
+    @media (max-width: 1050px){
+      nav ul li a{
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 858px){
+      .checkbtn{
+        display: block;
+      }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: lightpink;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 9;
+      }
+      nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 50px;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.active{
+        background: none;
+        color: green;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
+    }
+/* e-card section */
+    .box{
+      height: 710px;
+      width: 470px;
+      margin: 40px;
+      border: 3px solid #BCA74B;
+      background-color:#324C85;
+      position: relative;
+      top: 40px;
+    }
+
+    #Company{
+      font-size: 25px;
+      position: relative;
+      top: 40px;
+      left: 190px;
+      border: 1px solid black;
+      width: 100px;
+      border-style: hidden;
+    }
+
+    .invite{
+      position: relative;
+      top: 70px;
+      left: 10px;
+      font-size: 20px;
+    }
+
+    #Event{
+      font-size: 30px;
+      position: relative;
+      top: 100px;
+      left: 145px;
+      border: 1px solid black;
+      width: 200px;
+      height: 120px;
+      border-style: hidden;
+    }
+
+    #Text{
+      position: relative;
+      top: 120px;
+      left: 110px;
+      border: 1px solid black;
+      width: 270px;
+      height: 50px;
+      border-style: hidden;
+    }
+
+    #Date{
+      font-size: 20px;
+      position: relative;
+      top: 150px;
+      left: 180px;
+      border: 1px solid black;
+      width: 130px;
+      height: 30px;
+      border-style: hidden;
+    }
+
+    #Time{
+      font-size: 20px;
+      position: relative;
+      top: 140px;
+      left: 185px;
+      border: 1px solid black;
+      width: 120px;
+      height: 30px;
+      border-style: hidden;
+    }
+
+    hr{
+      width: 100px;
+      height: 3px;
+      position: relative;
+      top: 230px;
+      left: 10px;
+      background-color: #BCA74B;
+    }
+
+    #Place{
+      font-size: 20px;
+      position: relative;
+      top: 240px;
+      left: 160px;
+      border: 1px solid black;
+      width: 160px;
+      height: 60px;
+      border-style: hidden;
+    }
+
+    .container{
+      height: 800px;
+      width: 550px;
+      position: relative;
+      bottom: 20px;
+      background-color: #667DAD;
+      background-position: center;
+      background-size: cover;
+      margin: 90px;
+      opacity: 0.9;
+      align-items: center;
+    }
+
+    .main{
+      margin-top: 30px;
+    }
+
+
+/* whole content sec */
+    .content{
+      height: 1200px;
+      width: 100%;
+      margin: 0px;
+      background-color: #D2FCF9;
+      padding: 10px;
+      position: relative;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .save{
+      border: 2px solid black;
+      width: 200px;
+      height: 100px;
+      background-color: lightpink;
+      position: relative;
+      top: 700px;
+      right: 250px;
+    }
+
+    .save1{
+      font-size: 20px;
+      position: relative;
+      top: 20px;
+    }
+
+    #button1{
+      width: 70px;
+      height: 30px;
+      font-size: 15px;
+      position: relative;
+      top: 30px;
+    }
+
+    @media (max-width: 1050px){
+      .main{
+        width: 400px;
+        height: 650px;
+        margin-left: 110px;
+      }
+      .content{
+        height: 1600px;
+      }
+      .formsec{
+        position: relative;
+        top: 750px;
+        right: 250px;
+      }
+      .save{
+        position: relative;
+        top: 1330px;
+        right: 200px;
+      }
+      .save1{
+        font-size: 16px;
+      }
+    }
+
+/* footer section */
+    footer{
+      background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
+      height: 130px;
+      width: 100%;
+      word-spacing: 30px;
+      position: relative;
+    }
+
+    footer ul{
+      float: right;
+      margin-right: 100px;
+    }
+
+    footer ul li{
+      display: inline-block;
+      line-height: 80px;
+      margin: 0px 5px;
+    }
+
+    footer ul li a{
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 7px 13px;
+      border-radius: 3px;
+      color: #333;
+    }
+
+    .footer1{
+      word-spacing: normal;
+    }
+
+    @media (max-width: 1050px){
+      footer ul li a{
+        font-size: 14px;
+        word-spacing: 20px;
+      }
+    }
+
+
+/* form section */
+    .form{
+      float: right;
+      margin-left: 50px;
+      position: relative;
+      top: 200px;
+      width: 300px;
+      height: 480px;
+      border: 2px solid black;
+      background: lightpink;
+      padding: 50px;
+      padding-top: 20px;
+      font-size: 20px;
+    }
+
+    input{
+      height: 40px;
+    }
+
+    button{
+      height: 30px;
+      width: 100px;
+      font-size: 15px;
+      position: relative;
+      top: 20px;
+    }
+
+    </style>
+    </head>
+    <title></title>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class = "fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="../index.html" class="active">Home</a></li>
+        <li><a href="../index.html">Templates</a></li>
+        <li class="nav1"><a href="templates/createown.html">Create Your Own</a></li>
+        <li class="nav1"><a href="#">Favourites</a></li>
+        <li class="nav1"><a href="#">Login/Sign Up</a></li>
+      </ul>
+    </nav>
+
+<div class="content">
+  <div class="main">
+    <div class="container">
+      <div class="box">
+        <div id="Company">Tesla</div>
+        <p class="invite">YOU ARE INVITED!</p>
+        <div id="Event">PRODUCT LAUNCHING EVENT</div>
+        <div id="Text">Our company has invited you to witness our brand new product launch.</div>
+        <div id="Date">3 May 2021</div>
+        <hr>
+        <div id="Time">12pm</div>
+        <div id="Place">Ballroom</div>
+      </div>
+    </div>
+    </div>
+
+<div class="formsec">
+    <div class="form">
+      <label>Company:</label>
+      <input type="text" id="company" placeholder="Enter your company name" size="25"> <br>
+
+      <label>Event:</label>
+      <input type="text" id="event" placeholder="Enter event name" size="25"><br>
+
+      <label>Text:</label>
+      <input type="text" id="text" placeholder="Enter text" size="25"><br>
+
+      <label>Date:</label>
+      <input type="text" id="date" placeholder="Enter date" size="25"><br>
+
+      <label>Time:</label>
+      <input type="text" id="time" placeholder="Enter time" size="25"><br>
+
+      <label>Place:</label>
+      <input type="text" id="place" placeholder="Enter place" size="25"><br>
+
+      <button type="button" onclick="changeMe()" id="entry">Submit!</button>
+    </div>
+  </div>
+
+  <div class="save">
+    <div class="save1">Save this template</div>
+    <button type="button" id="button1">Save</button>
+  </div>
+  </div>
+
+    <div class="footer">
+      <footer>
+        <ul>
+          <li>
+            <a href="#" class="footer1">Help</a>
+            <a href="#" class="footer1">FAQ</a>
+            <a href="#" class="footer1">Contact: +673 1234567</a>
+            <a href="#" class="footer1">Email: abc@email.com</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
