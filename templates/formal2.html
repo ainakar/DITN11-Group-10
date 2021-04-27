@@ -283,21 +283,54 @@
       }
 
       .main{
-        margin-top: 100px;
+        margin-top: 30px;
+      }
+
+      .save{
+        border: 2px solid black;
+        width: 200px;
+        height: 100px;
+        background-color: lightpink;
+        position: relative;
+        top: 700px;
+        right: 250px;
+      }
+
+      .save1{
+        font-size: 20px;
+        position: relative;
+        top: 20px;
+      }
+
+      #button1{
+        width: 70px;
+        height: 30px;
+        font-size: 15px;
+        position: relative;
+        top: 30px;
       }
 
       @media (max-width: 1050px){
         .main{
           width: 400px;
           height: 650px;
+          margin-left: 110px;
         }
         .content{
           height: 1600px;
         }
         .formsec{
           position: relative;
-          top: 700px;
+          top: 750px;
+          right: 250px;
+        }
+        .save{
+          position: relative;
+          top: 1330px;
           right: 200px;
+        }
+        .save1{
+          font-size: 16px;
         }
       }
 
@@ -345,7 +378,7 @@
         float: right;
         margin-left: 20px;
         position: relative;
-        top: 350px;
+        top: 200px;
         width: 300px;
         height: 480px;
         border: 2px solid black;
@@ -425,6 +458,11 @@
 
     <button type="button" onclick="changeMe()" id="entry">Submit!</button>
   </div>
+</div>
+
+<div class="save">
+  <div class="save1">Save this template</div>
+  <button type="button" id="button1">Save</button>
 </div>
 </div>
 
