@@ -125,61 +125,55 @@
     }
 /* e-card section */
     .box{
-      height: 710px;
-      width: 470px;
+      height: 700px;
+      width: 500px;
       margin: 40px;
-      border: 3px solid #BCA74B;
-      background-color:#324C85;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+      background-color: #E4E7E1;
       position: relative;
-      top: 40px;
-      color: white;
-      letter-spacing: 1px;
+      top: 50px;
+      right: 40px;
     }
 
     #Company{
       font-size: 25px;
       position: relative;
-      top: 40px;
-      left: 190px;
+      top: 50px;
+      left: 215px;
       border: 1px solid black;
       width: 100px;
-      border-style: hidden;
-    }
-
-    .invite{
-      position: relative;
-      top: 70px;
-      left: 10px;
-      font-size: 20px;
-    }
-
-    #Event{
-      font-size: 30px;
-      position: relative;
-      top: 100px;
-      left: 145px;
-      border: 1px solid black;
-      width: 200px;
-      height: 120px;
       border-style: hidden;
     }
 
     #Text{
       font-size: 18px;
       position: relative;
-      top: 120px;
-      left: 65px;
+      bottom: 20px;
+      left: 95px;
       border: 1px solid black;
-      width: 350px;
+      width: 330px;
       height: 80px;
+      border-style: hidden;
+    }
+
+    #Event{
+      font-size: 30px;
+      position: relative;
+      top: 200px;
+      left: 160px;
+      border: 1px solid black;
+      width: 200px;
+      height: 120px;
       border-style: hidden;
     }
 
     #Date{
       font-size: 20px;
       position: relative;
-      top: 160px;
-      left: 180px;
+      top: 180px;
+      left: 200px;
       border: 1px solid black;
       width: 130px;
       height: 30px;
@@ -189,72 +183,61 @@
     #Time{
       font-size: 20px;
       position: relative;
-      top: 110px;
-      left: 185px;
+      top: 180px;
+      left: 200px;
       border: 1px solid black;
       width: 120px;
       height: 30px;
       border-style: hidden;
     }
 
-    .hr{
-      width: 140px;
-      height: 2px;
-      position: relative;
-      top: 230px;
-      left: 10px;
-      background-color: #BCA74B;
-    }
-
-    .hr1{
-      width: 250px;
-      height: 3px;
-      position: relative;
-      bottom: 295px;
-      right: 187px;
-      background-color: #BCA74B;
-      transform: rotate(-45deg);
-    }
-
-    .hr2{
-      width: 250px;
-      height: 3px;
-      position: relative;
-      bottom: 305px;
-      left: 187px;
-      background-color: #BCA74B;
-      transform: rotate(45deg);
-    }
-
-    .hr3{
-      width: 250px;
-      height: 3px;
-      position: relative;
-      top: 306px;
-      left: 187px;
-      background-color: #BCA74B;
-      transform: rotate(135deg);
-    }
-
-    .hr4{
-      width: 250px;
-      height: 3px;
-      position: relative;
-      top: 295px;
-      right: 187px;
-      background-color: #BCA74B;
-      transform: rotate(-135deg);
-    }
-
     #Place{
       font-size: 20px;
       position: relative;
       top: 200px;
-      left: 160px;
+      left: 180px;
       border: 1px solid black;
       width: 160px;
       height: 60px;
       border-style: hidden;
+    }
+
+    .line{
+      position: relative;
+      top: 140px;
+      left: 10px;
+    }
+
+    .seeu{
+      position: relative;
+      top: 170px;
+      left: 10px;
+    }
+
+    .hr{
+      width: 550px;
+      height: 10px;
+      position: relative;
+      bottom: 385px;
+      background-color: #BCA74B;
+    }
+
+    .hr1{
+      width: 550px;
+      height: 10px;
+      position: relative;
+      top: 345px;
+      background-color: #BCA74B;
+    }
+
+    .hr2{
+      width: 800px;
+      height: 10px;
+      position: relative;
+      bottom: 50px;
+      left: 125px;
+      transform: rotate(90deg);
+      background-color: #BCA74B;
     }
 
     .container{
@@ -262,7 +245,7 @@
       width: 550px;
       position: relative;
       bottom: 20px;
-      background-color: #667DAD;
+      background-color: #485885;
       background-position: center;
       background-size: cover;
       margin: 90px;
@@ -426,18 +409,17 @@
   <div class="main">
     <div class="container">
       <div class="box">
-        <div id="Company">Tesla</div>
-        <p class="invite">YOU ARE INVITED!</p>
-        <div id="Event">PRODUCT LAUNCHING EVENT</div>
-        <div id="Text">Our company has invited you to witness our brand new product launch.</div>
+        <div id="Company">Google</div>
+        <div id="Event">COMPANY STAFF MEETING</div>
+        <div id="Text">We are having an annual meeting for the company and would like to invite you.</div>
         <div id="Date">3 May 2021</div>
+        <div id="Time">12pm</div>
+        <div id="Place">Conference Room</div>
         <hr class="hr">
         <hr class="hr1">
         <hr class="hr2">
-        <hr class="hr3">
-        <hr class="hr4">
-        <div id="Time">12pm</div>
-        <div id="Place">Ballroom</div>
+        <p class="line">-----------------------------</p>
+        <p class="seeu">See you there!</p>
       </div>
     </div>
     </div>
