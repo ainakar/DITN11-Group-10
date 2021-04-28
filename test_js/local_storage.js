@@ -22,3 +22,17 @@ for (let i = 0; i < localStorage.length; i++) {
 
   lsOutput.innerHTML += `${key}: ${value}<br>`;
 }
+
+let myObject = {
+  name: "Karmila",
+  age: 22
+};
+
+let myObject_serialized = JSON.stringify(myObject);
+console.log(myObject_serialized);
+
+localStorage.setItem("myObject", myObject_serialized);
+
+let myObject_deserialized = JSON.parse(localStorage.getItem("myObject"));
+
+console.log(myObject_deserialized);
