@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
     <style media="screen">
     *{
       box-sizing:border-box;
@@ -136,9 +137,8 @@
           float: right;
           position: relative;
           top: 250px;
-
           width: 350px;
-          height: 200px;
+          height: 250px;
           border: 2px solid black;
           background: lightpink;
           padding-top: 20px;
@@ -215,7 +215,8 @@
 
         #entry{
           position: relative;
-          top: 40px;
+          top: 70px;
+          right: 20px;
           width: 100px;
           height: 30px;
         }
@@ -305,6 +306,8 @@
       <div class="box1">
         <label for="text">Add text</label><br>
         <input type="text" id="text"><br>
+        <label for="text">Background color: </label><br>
+        <input type="color" name="" id="color">
         <button type="button" onclick="changeMe()" id="entry">Enter!</button>
       </div>
 
