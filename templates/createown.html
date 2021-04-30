@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
     <style media="screen">
     *{
       box-sizing:border-box;
@@ -112,13 +113,19 @@
           justify-content: center;
         }
 
+        h2{
+          position: relative;
+          top: 130px;
+          left: 100px;
+        }
+
         #blankcanvas{
           height: 800px;
           width: 550px;
           background: white;
           position: relative;
           top: 130px;
-          left: 250px;
+          left: 400px;
           border: 1px solid black;
         }
 
@@ -126,7 +133,7 @@
           float: right;
           position: relative;
           top: 250px;
-          left: 190px;
+          right: 20px;
           width: 350px;
           height: 200px;
           border: 2px solid black;
@@ -135,40 +142,95 @@
           font-size: 20px;
         }
 
-        .box2{
-          position: relative;
-          top: 210px;
-          right: 850px;
-          width: 500px;
-          height: 200px;
-          border: 2px solid black;
-          background: lightpink;
-          padding-top: 20px;
-          font-size: 20px;
+        #Informal{
+          resize: both;
         }
 
-        .box3{
+        .bdaydeco{
+          width: 350px;
+          height: 100px;
+          border: 1px solid black;
+          padding: 10px;
+          margin-top: 30px;
           position: relative;
-          top: 230px;
-          right: 850px;
-          width: 500px;
-          height: 200px;
-          border: 2px solid black;
-          background: lightpink;
-          padding-top: 20px;
-          font-size: 20px;
+          cursor: move;
         }
 
-        .box4{
+        .bdaydeco1{
+          width: 350px;
+          height: 150px;
+          border: 1px solid black;
+          padding: 10px;
           position: relative;
-          top: 250px;
-          right: 850px;
-          width: 500px;
-          height: 200px;
-          border: 2px solid black;
-          background: lightpink;
-          padding-top: 20px;
-          font-size: 20px;
+          top: 50px;
+          cursor: move;
+        }
+
+        .formaldeco{
+          width: 350px;
+          height: 270px;
+          border: 1px solid black;
+          padding: 10px;
+          margin-top: 30px;
+          position: relative;
+          cursor: move;
+        }
+
+        .formaldeco1{
+          width: 350px;
+          height: 190px;
+          border: 1px solid black;
+          padding: 10px;
+          margin-top: 30px;
+          position: relative;
+          cursor: move;
+        }
+
+        /* Style the tab */
+        .tab {
+          overflow: hidden;
+          border: 1px solid #ccc;
+          background-color: #f1f1f1;
+          position: relative;
+          right: 800px;
+          top: 200px;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+          background-color: inherit;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 17px;
+          width: 180px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+          background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+          width: 542px;
+          height: 650px;
+          display: none;
+          padding: 6px 12px;
+          border: 1px solid #ccc;
+          background: white;
+          border-top: none;
+          position: relative;
+          right: 800px;
+          top: 200px;
         }
 
         #text{
@@ -197,24 +259,6 @@
             position: relative;
             top: 1000px;
             left: -350px;
-          }
-
-          .box2{
-            position: relative;
-            top: 1400px;
-            left: -270px;
-          }
-
-          .box3{
-            position: relative;
-            top: 1450px;
-            left: -270px;
-          }
-
-          .box4{
-            position: relative;
-            top: 1500px;
-            left: -270px;
           }
 
         }
@@ -277,20 +321,36 @@
     </nav>
 
     <div class="content">
-      <div class="main">
-        <div id="blankcanvas"></div>
+      <h2>DECORATIONS</h2>
+      <div id="main">
+        <div id="blankcanvas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
       </div>
 
     <div class="boxsec">
       <div class="box1">
         <label for="text">Add text</label><br>
         <input type="text" id="text"><br>
-
         <button type="button" onclick="changeMe()" id="entry">Enter!</button>
       </div>
-      <div class="box2"></div>
-      <div class="box3"></div>
-      <div class="box4"></div>
+
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Informal')">Informal</button>
+        <button class="tablinks" onclick="openCity(event, 'Formal')">Formal</button>
+        <button class="tablinks" onclick="openCity(event, 'Corporate')">Corporate</button>
+      </div>
+      <div id="Informal" class="tabcontent" ondrop="drop(event)" ondragover="allowDrop(event)">
+         <img src="images/divider.png" class="bdaydeco" draggable="true" ondragstart="drag(event)">
+         <img src="images/bdaydeco1.png" class="bdaydeco1" draggable="true" ondragstart="drag(event)">
+      </div>
+
+      <div id="Formal" class="tabcontent" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="images/formaldeco.png" class="formaldeco" draggable="true">
+        <img src="images/formaldeco1.png" class="formaldeco1" draggable="true">
+      </div>
+
+      <div id="Corporate" class="tabcontent">
+      </div>
+
     </div>
     </div>
 
@@ -307,5 +367,34 @@
       </footer>
     </div>
 
+    <script>
+    // tab section
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    //dragndrop
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
   </body>
 </html>
