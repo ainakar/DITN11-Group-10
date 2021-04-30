@@ -116,7 +116,7 @@
         h2{
           position: relative;
           top: 130px;
-          left: 100px;
+          left: 150px;
         }
 
         #blankcanvas{
@@ -125,15 +125,18 @@
           background: white;
           position: relative;
           top: 130px;
-          left: 400px;
+          left: 500px;
           border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         .box1{
           float: right;
           position: relative;
           top: 250px;
-          right: 20px;
+
           width: 350px;
           height: 200px;
           border: 2px solid black;
@@ -142,95 +145,67 @@
           font-size: 20px;
         }
 
-        #Informal{
-          resize: both;
+        .deco{
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
-        .bdaydeco{
-          width: 350px;
+        .box2{
+          width: 300px;
+          height: 500px;
+          border: 1px solid black;
+          position: relative;
+          top: 200px;
+          right: 800px;
+          padding-top: 50px;
+        }
+
+        .box3{
+          width: 300px;
+          height: 500px;
+          border: 1px solid black;
+          position: relative;
+          top: 200px;
+          right: 800px;
+          padding-top: 50px;
+        }
+
+        #informaldeco{
+          width: 250px;
           height: 100px;
-          border: 1px solid black;
           padding: 10px;
           margin-top: 30px;
           position: relative;
           cursor: move;
         }
 
-        .bdaydeco1{
-          width: 350px;
+        #informaldeco1{
+          width: 250px;
+          height: 100px;
+          padding: 10px;
+          margin-top: 20px;
+          position: relative;
+          cursor: move;
+        }
+
+        #formaldeco{
+          width: 300px;
+          height: 250px;
+          padding: 10px;
+          position: relative;
+          bottom: 30px;
+          cursor: move;
+        }
+
+        #formaldeco1{
+          width: 300px;
           height: 150px;
-          border: 1px solid black;
           padding: 10px;
+          margin-top: 10px;
           position: relative;
-          top: 50px;
+          bottom: 70px;
           cursor: move;
-        }
-
-        .formaldeco{
-          width: 350px;
-          height: 270px;
-          border: 1px solid black;
-          padding: 10px;
-          margin-top: 30px;
-          position: relative;
-          cursor: move;
-        }
-
-        .formaldeco1{
-          width: 350px;
-          height: 190px;
-          border: 1px solid black;
-          padding: 10px;
-          margin-top: 30px;
-          position: relative;
-          cursor: move;
-        }
-
-        /* Style the tab */
-        .tab {
-          overflow: hidden;
-          border: 1px solid #ccc;
-          background-color: #f1f1f1;
-          position: relative;
-          right: 800px;
-          top: 200px;
-        }
-
-        /* Style the buttons inside the tab */
-        .tab button {
-          background-color: inherit;
-          float: left;
-          border: none;
-          outline: none;
-          cursor: pointer;
-          padding: 14px 16px;
-          transition: 0.3s;
-          font-size: 17px;
-          width: 180px;
-        }
-
-        /* Change background color of buttons on hover */
-        .tab button:hover {
-          background-color: #ddd;
-        }
-
-        /* Create an active/current tablink class */
-        .tab button.active {
-          background-color: #ccc;
-        }
-
-        /* Style the tab content */
-        .tabcontent {
-          width: 542px;
-          height: 650px;
-          display: none;
-          padding: 6px 12px;
-          border: 1px solid #ccc;
-          background: white;
-          border-top: none;
-          position: relative;
-          right: 800px;
-          top: 200px;
         }
 
         #text{
@@ -323,7 +298,7 @@
     <div class="content">
       <h2>DECORATIONS</h2>
       <div id="main">
-        <div id="blankcanvas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="blankcanvas"></div>
       </div>
 
     <div class="boxsec">
@@ -333,24 +308,18 @@
         <button type="button" onclick="changeMe()" id="entry">Enter!</button>
       </div>
 
-      <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Informal')">Informal</button>
-        <button class="tablinks" onclick="openCity(event, 'Formal')">Formal</button>
-        <button class="tablinks" onclick="openCity(event, 'Corporate')">Corporate</button>
-      </div>
-      <div id="Informal" class="tabcontent" ondrop="drop(event)" ondragover="allowDrop(event)">
-         <img src="images/divider.png" class="bdaydeco" draggable="true" ondragstart="drag(event)">
-         <img src="images/bdaydeco1.png" class="bdaydeco1" draggable="true" ondragstart="drag(event)">
+    <div class="deco">
+      <div class="box2">
+         <img src="images/divider.png" id="informaldeco" draggable="true">
+         <img src="images/bdaydeco1.png" id="informaldeco1" draggable="true">
       </div>
 
-      <div id="Formal" class="tabcontent" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <img src="images/formaldeco.png" class="formaldeco" draggable="true">
-        <img src="images/formaldeco1.png" class="formaldeco1" draggable="true">
+      <div class="box3">
+        <img src="images/formaldeco.png" id="formaldeco" draggable="true">
+        <img src="images/formaldeco1.png" id="formaldeco1" draggable="true">
       </div>
 
-      <div id="Corporate" class="tabcontent">
-      </div>
-
+    </div>
     </div>
     </div>
 
@@ -367,34 +336,7 @@
       </footer>
     </div>
 
-    <script>
-    // tab section
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
 
-    //dragndrop
-      function allowDrop(ev) {
-        ev.preventDefault();
-      }
-      function drag(ev) {
-        ev.dataTransfer.setData("text", ev.target.id);
-      }
-      function drop(ev) {
-        ev.preventDefault();
-        var data = ev.dataTransfer.getData("text");
-        ev.target.appendChild(document.getElementById(data));
-      }
-    </script>
+    <script type="text/javascript" src="js/createown.js"></script>
   </body>
 </html>
