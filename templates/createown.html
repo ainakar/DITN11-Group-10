@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
     <style media="screen">
     *{
       box-sizing:border-box;
@@ -118,9 +118,10 @@
         h2{
           position: relative;
           top: 130px;
-          left: 300px;
+          left: 280px;
           border: 1px solid black;
           height: 50px;
+          padding: 10px;
         }
 
         #main{
@@ -134,7 +135,7 @@
           width: 550px;
           position: relative;
           bottom: 70px;
-          left: 500px;
+          left: 450px;
           background-color: white;
           background-position: center;
           background-size: cover;
@@ -148,7 +149,6 @@
           position: relative;
           margin-right: 100px;
           top: 250px;
-          right: 100px;
           width: 350px;
           height: 250px;
           border: 2px solid black;
@@ -169,8 +169,9 @@
           border: 1px solid black;
           position: relative;
           top: 200px;
-          right: 850px;
+          right: 750px;
           padding-top: 50px;
+          background: #FCD6D6;
         }
 
         .box3{
@@ -179,8 +180,9 @@
           border: 1px solid black;
           position: relative;
           top: 200px;
-          right: 850px;
+          right: 750px;
           padding-top: 50px;
+          background: #FCD6D6;
         }
 
         #informaldeco{
@@ -190,6 +192,7 @@
           margin-top: 30px;
           position: relative;
           cursor: move;
+          resize:
         }
 
         #informaldeco1{
@@ -212,12 +215,13 @@
 
         #formaldeco1{
           width: 300px;
-          height: 150px;
+          height: 200px;
           padding: 10px;
           margin-top: 10px;
           position: relative;
           bottom: 70px;
           cursor: move;
+          padding-top: 70px;
         }
 
         #text{
@@ -227,10 +231,33 @@
 
         #entry{
           position: relative;
-          top: 70px;
-          right: 20px;
+          top: 40px;
           width: 100px;
           height: 30px;
+        }
+
+        .save{
+          border: 2px solid black;
+          width: 200px;
+          height: 100px;
+          background-color: lightpink;
+          position: relative;
+          top: 550px;
+          right: 350px;
+        }
+
+        .save1{
+          font-size: 20px;
+          position: relative;
+          top: 20px;
+        }
+
+        #button1{
+          width: 70px;
+          height: 30px;
+          font-size: 15px;
+          position: relative;
+          top: 30px;
         }
 
         @media (max-width: 1050px){
@@ -330,29 +357,34 @@
     <div class="content">
       <h2>DECORATIONS</h2>
       <div id="main">
-        <div id="blankcanvas"></div>
+        <div id="blankcanvas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
       </div>
 
     <div class="boxsec">
       <div class="box1">
         <label for="text">Add text</label><br>
         <input type="text" id="text"><br>
-        <label for="text">Background color: </label><br>
-        <input type="color" name="" id="color">
+        <label>Background Color: </label>
+        <div class="color-picker"></div>
         <button type="button" onclick="changeMe()" id="entry">Enter!</button>
       </div>
 
     <div class="deco">
-      <div class="box2">
-         <img src="images/divider.png" id="informaldeco" draggable="true">
-         <img src="images/bdaydeco1.png" id="informaldeco1" draggable="true">
+      <div class="box2" ondrop="drop(event)" ondragover="allowDrop(event)">
+         <img src="images/divider.png" id="informaldeco" draggable="true" ondragstart="drag(event)">
+         <img src="images/bdaydeco1.png" id="informaldeco1" draggable="true" ondragstart="drag(event)">
       </div>
 
-      <div class="box3">
-        <img src="images/formaldeco.png" id="formaldeco" draggable="true">
-        <img src="images/formaldeco1.png" id="formaldeco1" draggable="true">
+      <div class="box3" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="images/formaldeco.png" id="formaldeco" draggable="true" ondragstart="drag(event)">
+        <img src="images/formaldeco1.png" id="formaldeco1" draggable="true" ondragstart="drag(event)">
       </div>
     </div>
+    </div>
+
+    <div class="save">
+      <div class="save1">Save this template</div>
+      <button type="button" onclick="rememberMe()" id="button1">Save</button>
     </div>
     </div>
 
