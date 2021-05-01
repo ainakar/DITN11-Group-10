@@ -34,13 +34,13 @@ nav ul li a{
   color: #333;
 }
 
-.nav1{
-  word-spacing: normal;
+nav ul li a:hover{
+  background: pink;
+  transition: 0.5s;
 }
 
-a.active,a:hover{
-  background: #F99FA6;
-  transition: 0.5s;
+.nav1{
+  word-spacing: normal;
 }
 
 .checkbtn{
@@ -85,10 +85,7 @@ a.active,a:hover{
   nav ul li a{
     font-size: 20px;
   }
-  a:hover,a.active{
-    background: none;
-    color: green;
-  }
+
   #check:checked ~ ul{
     left: 0;
   }
@@ -122,11 +119,12 @@ a.active,a:hover{
   bottom: 30px;
   height: 700px;
   width: 40%;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-top: hidden;
   padding: 40px;
   margin-left: 60px;
   overflow: auto;
-  background: lightblue;;
+  background-image: linear-gradient(to bottom, #36d1dc, #5b86e5);
   text-align: center;
 }
 
@@ -135,11 +133,13 @@ a.active,a:hover{
   display: block;
   font-size: 30px;
   border: 2px solid black;
+  border-bottom: hidden;
   padding: 10px;
   margin-left: 60px;
   width: 40%;
   height: 60px;
   text-align: center;
+  background: #36d1dc;
 }
 
 .formaltemplate{
@@ -155,11 +155,12 @@ a.active,a:hover{
   position: absolute;
   height: 700px;
   width: 40%;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-top: hidden;
   padding: 40px;
   margin-left: 400px;
   overflow: auto;
-  background: lightblue;;
+  background-image: linear-gradient(to bottom, #36d1dc, #5b86e5);
   text-align: center;
   top: 160px;
   right: 63px;
@@ -172,12 +173,14 @@ a.active,a:hover{
   display: block;
   font-size: 30px;
   border: 2px solid black;
+  border-bottom: hidden;
   padding: 10px;
   margin-right: 60px;
   width: 40%;
   height: 60px;
   overflow: auto;
   text-align: center;
+  background: #36d1dc;
 }
 
 .informaltemplate{
@@ -194,11 +197,12 @@ a.active,a:hover{
   bottom: 30px;
   height: 700px;
   width: 40%;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-top: hidden;
   padding: 40px;
   margin-left: 60px;
   overflow: auto;
-  background: lightblue;;
+  background-image: linear-gradient(to bottom, #36d1dc, #5b86e5);
   text-align: center;
 }
 
@@ -207,11 +211,13 @@ a.active,a:hover{
   display: block;
   font-size: 30px;
   border: 2px solid black;
+  border-bottom: hidden;
   padding: 10px;
   margin-left: 60px;
   width: 40%;
   height: 60px;
   text-align: center;
+  background: #36d1dc;
 }
 .corporatetemplate{
   position: relative;
@@ -226,7 +232,7 @@ a.active,a:hover{
 .Section2{
   height: 350px;
   width: 100%;
-  background-color: #F99FA6;
+  background-image: linear-gradient(to bottom, #ec6f66, #f3a183);
   position: absolute;
   top: 1900px;
 }
@@ -250,10 +256,10 @@ a.active,a:hover{
 .button1 {
   background-color: white;
   color: black;
-  border: 2px solid #dd5e89;
+  border: 2px solid #ffb88c;
 }
 .button1:hover {
-  background-color: #dd5e89;
+  background-color: #ffb88c;
   color: white;
 }
 
@@ -277,12 +283,24 @@ footer ul li{
 }
 
 footer ul li a{
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
   text-transform: uppercase;
   padding: 7px 13px;
   border-radius: 3px;
   color: #333;
+}
+
+footer ul li a:hover{
+  background: pink;
+  transition: 0.5s;
+}
+
+@media (max-width: 1050px){
+  footer ul li a{
+    font-size: 14px;
+    word-spacing: 20px;
+  }
 }
 
 .footer1{

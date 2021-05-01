@@ -34,12 +34,13 @@ nav ul li a{
   color: #333;
 }
 
-.nav1{
-  word-spacing: normal;
+nav ul li a:hover{
+  background: pink;
+  transition: 0.5s;
 }
 
-a.active,a:hover{
-  transition: 0.5s;
+.nav1{
+  word-spacing: normal;
 }
 
 .checkbtn{
@@ -84,10 +85,7 @@ a.active,a:hover{
   nav ul li a{
     font-size: 20px;
   }
-  a:hover,a.active{
-    background: none;
-    color: green;
-  }
+
   #check:checked ~ ul{
     left: 0;
   }
@@ -121,6 +119,11 @@ a.active,a:hover{
       padding: 7px 13px;
       border-radius: 3px;
       color: #333;
+    }
+
+    footer ul li a:hover{
+      background: pink;
+      transition: 0.5s;
     }
 
     .footer1{
