@@ -4,29 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <script>
-    function changeMe(){
-      var heading = document.getElementById("heading").value;
-      var name1 = document.getElementById("name1").value;
-      var name2 = document.getElementById("name2").value;
-      var date = document.getElementById("date").value;
-      var time = document.getElementById("time").value;
-      var place = document.getElementById("place").value;
-
-      var myBox1 = document.getElementById("Title");
-      myBox1.innerHTML = heading;
-      var myBox2 = document.getElementById("Name1");
-      myBox2.innerHTML = name1;
-      var myBox3 = document.getElementById("Name2");
-      myBox3.innerHTML = name2;
-      var myBox4 = document.getElementById("Date");
-      myBox4.innerHTML = date;
-      var myBox5 = document.getElementById("Time");
-      myBox5.innerHTML = time;
-      var myBox6 = document.getElementById("Place");
-      myBox6.innerHTML = place;
-}
-    </script>
 
     <style media="screen">
     *{
@@ -424,7 +401,7 @@
 
   <div class="save">
     <div class="save1">Save this template</div>
-    <button type="button" id="button1">Save</button>
+    <button type="button" onclick="rememberMe()" id="button1">Save</button>
   </div>
   </div>
 
@@ -440,5 +417,65 @@
         </ul>
       </footer>
     </div>
+
+    <script>
+    function changeMe(){
+      var heading = document.getElementById("heading").value;
+      var name1 = document.getElementById("name1").value;
+      var name2 = document.getElementById("name2").value;
+      var date = document.getElementById("date").value;
+      var time = document.getElementById("time").value;
+      var place = document.getElementById("place").value;
+
+      var myBox1 = document.getElementById("Title");
+      myBox1.innerHTML = heading;
+      var myBox2 = document.getElementById("Name1");
+      myBox2.innerHTML = name1;
+      var myBox3 = document.getElementById("Name2");
+      myBox3.innerHTML = name2;
+      var myBox4 = document.getElementById("Date");
+      myBox4.innerHTML = date;
+      var myBox5 = document.getElementById("Time");
+      myBox5.innerHTML = time;
+      var myBox6 = document.getElementById("Place");
+      myBox6.innerHTML = place;
+    }
+
+    function rememberMe(){
+      localStorage.setItem("heading", heading.value);
+      localStorage.setItem("name1", name1.value);
+      localStorage.setItem("name2", name2.value);
+      localStorage.setItem("date", date.value);
+      localStorage.setItem("time", time.value);
+      localStorage.setItem("place", place.value);
+
+      document.getElementById("Title").innerHTML = localStorage.getItem("heading");
+      document.getElementById("Name1").innerHTML = localStorage.getItem("name1");
+      document.getElementById("Name2").innerHTML = localStorage.getItem("name2");
+      document.getElementById("Date").innerHTML = localStorage.getItem("date");
+      document.getElementById("Time").innerHTML = localStorage.getItem("time");
+      document.getElementById("Place").innerHTML = localStorage.getItem("place");
+    }
+
+    if ("Title" != null) {
+      document.getElementById("Title").innerHTML = localStorage.getItem("heading") || 'Wedding Ceremony';
+    }
+    if ("Name1" != null) {
+      document.getElementById("Name1").innerHTML = localStorage.getItem("name1") || 'John Doe';
+    }
+    if ("Name2" != null) {
+      document.getElementById("Name2").innerHTML = localStorage.getItem("name2") || 'Jane Doe';
+    }
+    if ("Date" != null) {
+      document.getElementById("Date").innerHTML = localStorage.getItem("date") || '3 May 2021';
+    }
+    if ("Time" != null) {
+      document.getElementById("Time").innerHTML = localStorage.getItem("time") || '12pm';
+    }
+    if ("Place" != null) {
+      document.getElementById("Place").innerHTML = localStorage.getItem("place") || 'JP Amphitheatre';
+    }
+
+    </script>
   </body>
 </html>
