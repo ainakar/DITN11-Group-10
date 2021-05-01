@@ -65,12 +65,13 @@
       color: #333;
     }
 
-    .nav1{
-      word-spacing: normal;
+    nav ul li a:hover{
+      background: pink;
+      transition: 0.5s;
     }
 
-    a.active,a:hover{
-      transition: 0.5s;
+    .nav1{
+      word-spacing: normal;
     }
 
     .checkbtn{
@@ -115,10 +116,7 @@
       nav ul li a{
         font-size: 20px;
       }
-      a:hover,a.active{
-        background: none;
-        color: green;
-      }
+
       #check:checked ~ ul{
         left: 0;
       }
@@ -362,6 +360,11 @@
         color: #333;
       }
 
+      footer ul li a:hover{
+        background: pink;
+        transition: 0.5s;
+      }
+
       .footer1{
         word-spacing: normal;
       }
@@ -411,7 +414,7 @@
       <ul>
         <li><a href="../index.html" class="active">Home</a></li>
         <li><a href="#">Templates</a></li>
-        <li class="nav1"><a href="templates/createown.html">Create Your Own</a></li>
+        <li class="nav1"><a href="createown.html">Create Your Own</a></li>
         <li class="nav1"><a href="#">Favourites</a></li>
         <li class="nav1"><a href="#">Login/Sign Up</a></li>
       </ul>

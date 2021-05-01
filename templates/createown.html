@@ -12,6 +12,7 @@
 
     body{
       margin: 0px;
+      overflow-x: hidden;
     }
 
 /*whole nav section*/
@@ -117,26 +118,37 @@
         h2{
           position: relative;
           top: 130px;
-          left: 150px;
+          left: 300px;
+          border: 1px solid black;
+          height: 50px;
         }
 
-        #blankcanvas{
-          height: 800px;
-          width: 550px;
-          background: white;
-          position: relative;
-          top: 130px;
-          left: 500px;
-          border: 1px solid black;
+        #main{
           display: flex;
           justify-content: center;
           align-items: center;
         }
 
+        #blankcanvas{
+          height: 800px;
+          width: 550px;
+          position: relative;
+          bottom: 70px;
+          left: 500px;
+          background-color: white;
+          background-position: center;
+          background-size: cover;
+          margin: 90px;
+          align-items: center;
+          border: 1px solid black;
+        }
+
         .box1{
           float: right;
           position: relative;
+          margin-right: 100px;
           top: 250px;
+          right: 100px;
           width: 350px;
           height: 250px;
           border: 2px solid black;
@@ -157,7 +169,7 @@
           border: 1px solid black;
           position: relative;
           top: 200px;
-          right: 800px;
+          right: 850px;
           padding-top: 50px;
         }
 
@@ -167,7 +179,7 @@
           border: 1px solid black;
           position: relative;
           top: 200px;
-          right: 800px;
+          right: 850px;
           padding-top: 50px;
         }
 
@@ -221,20 +233,39 @@
           height: 30px;
         }
 
-        @media (max-width: 1040px){
+        @media (max-width: 1050px){
           .content{
-            height: 2300px;
+            height: 2200px;
           }
 
           #blankcanvas{
             position: relative;
-            top: 80px;
+            bottom: 600px;
+            left: 250px;
           }
 
           .box1{
             position: relative;
             top: 1000px;
-            left: -350px;
+            left: -450px;
+          }
+
+          h2{
+            position: relative;
+            top: 1300px;
+            left: 700px;
+          }
+
+          .box2{
+            position: relative;
+            top: 1400px;
+            right: 200px;
+          }
+
+          .box3{
+            position: relative;
+            top: 1400px;
+            right: 190px;
           }
 
         }
@@ -279,7 +310,7 @@
           }
         }
     </style>
-    <title>Create Your Own</title>
+    <title>Create Own E-Card</title>
   </head>
   <body>
     <nav>
@@ -321,7 +352,6 @@
         <img src="images/formaldeco.png" id="formaldeco" draggable="true">
         <img src="images/formaldeco1.png" id="formaldeco1" draggable="true">
       </div>
-
     </div>
     </div>
     </div>
