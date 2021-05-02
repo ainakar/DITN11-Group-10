@@ -32,6 +32,7 @@ nav ul li a{
   padding: 7px 13px;
   border-radius: 3px;
   color: #333;
+  font-family: 'Raleway', sans-serif;
 }
 
 nav ul li a:hover{
@@ -119,6 +120,7 @@ nav ul li a:hover{
       padding: 7px 13px;
       border-radius: 3px;
       color: #333;
+      font-family: 'Raleway', sans-serif;
     }
 
     footer ul li a:hover{

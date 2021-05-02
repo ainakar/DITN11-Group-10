@@ -24,7 +24,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: #645AFC;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -139,6 +139,7 @@ nav ul li a{
   padding: 7px 13px;
   border-radius: 3px;
   color: #333;
+  font-family: 'Raleway', sans-serif;
 }
 
 nav ul li a:hover{
@@ -227,11 +228,13 @@ nav ul li a:hover{
   position: relative;
   margin: 10px;
   padding: 10px;
+  font-family: 'Courgette', cursive;
+  font-size: 25px;
 }
 
 .box1{
   position: relative;
-  bottom: 30px;
+  bottom: 40px;
   height: 700px;
   width: 40%;
   border: 2px solid black;
@@ -246,7 +249,7 @@ nav ul li a:hover{
 #Formal{
   position: relative;
   display: block;
-  font-size: 30px;
+  font-size: 35px;
   border: 2px solid black;
   border-bottom: hidden;
   padding: 10px;
@@ -255,6 +258,7 @@ nav ul li a:hover{
   height: 60px;
   text-align: center;
   background: #36d1dc;
+  font-family: 'Patrick Hand', cursive;
 }
 
 .formaltemplate{
@@ -274,7 +278,6 @@ nav ul li a:hover{
   border-top: hidden;
   padding: 40px;
   margin-left: 400px;
-  overflow: auto;
   background-image: linear-gradient(to bottom, #36d1dc, #5b86e5);
   text-align: center;
   top: 160px;
@@ -284,18 +287,18 @@ nav ul li a:hover{
 #Informal{
   position: relative;
   float: right;
-  bottom: 820px;
+  bottom: 830px;
   display: block;
-  font-size: 30px;
+  font-size: 35px;
   border: 2px solid black;
   border-bottom: hidden;
   padding: 10px;
   margin-right: 60px;
   width: 40%;
   height: 60px;
-  overflow: auto;
   text-align: center;
   background: #36d1dc;
+  font-family: 'Patrick Hand', cursive;
 }
 
 .informaltemplate{
@@ -309,7 +312,7 @@ nav ul li a:hover{
 
 .box3{
   position: relative;
-  bottom: 30px;
+  bottom: 40px;
   height: 700px;
   width: 40%;
   border: 2px solid black;
@@ -324,7 +327,7 @@ nav ul li a:hover{
 #Corporate{
   position: relative;
   display: block;
-  font-size: 30px;
+  font-size: 35px;
   border: 2px solid black;
   border-bottom: hidden;
   padding: 10px;
@@ -333,6 +336,7 @@ nav ul li a:hover{
   height: 60px;
   text-align: center;
   background: #36d1dc;
+  font-family: 'Patrick Hand', cursive;
 }
 .corporatetemplate{
   position: relative;
@@ -355,7 +359,7 @@ nav ul li a:hover{
   text-align: center;
   padding: 100px;
   margin: 0px;
-  font-size: 25px;
+  font-size: 30px;
 }
 .button{
   height: 50px;
@@ -404,6 +408,7 @@ footer ul li a{
   padding: 7px 13px;
   border-radius: 3px;
   color: #333;
+  font-family: 'Raleway', sans-serif;
 }
 
 footer ul li a:hover{
