@@ -4,29 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <script>
-    function changeMe(){
-      var company = document.getElementById("company").value;
-      var event = document.getElementById("event").value;
-      var text = document.getElementById("text").value;
-      var date = document.getElementById("date").value;
-      var time = document.getElementById("time").value;
-      var place = document.getElementById("place").value;
-
-      var myBox1 = document.getElementById("Company");
-      myBox1.innerHTML = company;
-      var myBox2 = document.getElementById("Event");
-      myBox2.innerHTML = event;
-      var myBox3 = document.getElementById("Text");
-      myBox3.innerHTML = text;
-      var myBox4 = document.getElementById("Date");
-      myBox4.innerHTML = date;
-      var myBox5 = document.getElementById("Time");
-      myBox5.innerHTML = time;
-      var myBox6 = document.getElementById("Place");
-      myBox6.innerHTML = place;
-}
-//     </script>
 
     <style media="screen">
     *{
@@ -150,7 +127,7 @@
       font-size: 20px;
     }
 
-    #Event{
+    #Perkara{
       font-size: 30px;
       position: relative;
       top: 100px;
@@ -172,7 +149,7 @@
       border-style: hidden;
     }
 
-    #Date{
+    #Date_3{
       font-size: 20px;
       position: relative;
       top: 160px;
@@ -183,7 +160,7 @@
       border-style: hidden;
     }
 
-    #Time{
+    #Time_3{
       font-size: 20px;
       position: relative;
       top: 110px;
@@ -243,7 +220,7 @@
       transform: rotate(-135deg);
     }
 
-    #Place{
+    #Place_3{
       font-size: 20px;
       position: relative;
       top: 200px;
@@ -430,16 +407,16 @@
       <div class="box">
         <div id="Company">Tesla</div>
         <p class="invite">YOU ARE INVITED!</p>
-        <div id="Event">PRODUCT LAUNCHING EVENT</div>
+        <div id="Perkara">PRODUCT LAUNCHING EVENT</div>
         <div id="Text">Our company has invited you to witness our brand new product launch.</div>
-        <div id="Date">3 May 2021</div>
+        <div id="Date_3">3 May 2021</div>
         <hr class="hr">
         <hr class="hr1">
         <hr class="hr2">
         <hr class="hr3">
         <hr class="hr4">
-        <div id="Time">12pm</div>
-        <div id="Place">Ballroom</div>
+        <div id="Time_3">12pm</div>
+        <div id="Place_3">Ballroom</div>
       </div>
     </div>
     </div>
@@ -450,19 +427,19 @@
       <input type="text" id="company" placeholder="Enter your company name" size="25"> <br>
 
       <label>Event:</label>
-      <input type="text" id="event" placeholder="Enter event name" size="25"><br>
+      <input type="text" id="perkara" placeholder="Enter event name" size="25"><br>
 
       <label>Text:</label>
       <input type="text" id="text" placeholder="Enter text" size="25"><br>
 
       <label>Date:</label>
-      <input type="text" id="date" placeholder="Enter date" size="25"><br>
+      <input type="text" id="date_3" placeholder="Enter date" size="25"><br>
 
       <label>Time:</label>
-      <input type="text" id="time" placeholder="Enter time" size="25"><br>
+      <input type="text" id="time_3" placeholder="Enter time" size="25"><br>
 
       <label>Place:</label>
-      <input type="text" id="place" placeholder="Enter place" size="25"><br>
+      <input type="text" id="place_3" placeholder="Enter place" size="25"><br>
 
       <button type="button" onclick="changeMe()" id="entry">Submit!</button>
     </div>
@@ -470,7 +447,7 @@
 
   <div class="save">
     <div class="save1">Save this template</div>
-    <button type="button" id="button1">Save</button>
+    <button type="button" onclick="rememberMe()" id="button1">Save</button>
   </div>
   </div>
 
@@ -486,5 +463,64 @@
         </ul>
       </footer>
     </div>
+
+    <script>
+    function changeMe(){
+      var company = document.getElementById("company").value;
+      var perkara = document.getElementById("perkara").value;
+      var text = document.getElementById("text").value;
+      var date_3 = document.getElementById("date_3").value;
+      var time_3 = document.getElementById("time_3").value;
+      var place_3 = document.getElementById("place_3").value;
+
+      var myBox1 = document.getElementById("Company");
+      myBox1.innerHTML = company;
+      var myBox2 = document.getElementById("Perkara");
+      myBox2.innerHTML = perkara;
+      var myBox3 = document.getElementById("Text");
+      myBox3.innerHTML = text;
+      var myBox4 = document.getElementById("Date_3");
+      myBox4.innerHTML = date_3;
+      var myBox5 = document.getElementById("Time_3");
+      myBox5.innerHTML = time_3;
+      var myBox6 = document.getElementById("Place_3");
+      myBox6.innerHTML = place_3;
+    }
+
+    function rememberMe(){
+      localStorage.setItem("company", company.value);
+      localStorage.setItem("perkara", perkara.value);
+      localStorage.setItem("text", text.value);
+      localStorage.setItem("date_3", date_3.value);
+      localStorage.setItem("time_3", time_3.value);
+      localStorage.setItem("place_3", place_3.value);
+
+      document.getElementById("Company").innerHTML = localStorage.getItem("company");
+      document.getElementById("Perkara").innerHTML = localStorage.getItem("perkara");
+      document.getElementById("Text").innerHTML = localStorage.getItem("text");
+      document.getElementById("Date_3").innerHTML = localStorage.getItem("date_3");
+      document.getElementById("Time_3").innerHTML = localStorage.getItem("time_3");
+      document.getElementById("Place_3").innerHTML = localStorage.getItem("place_3");
+    }
+
+    if ("Company" != null) {
+      document.getElementById("Company").innerHTML = localStorage.getItem("company") || 'Tesla';
+    }
+    if ("Perkara" != null) {
+      document.getElementById("Perkara").innerHTML = localStorage.getItem("perkara") || 'PRODUCT LAUNCHING EVENT';
+    }
+    if ("Text" != null) {
+      document.getElementById("Text").innerHTML = localStorage.getItem("text") || 'Our company has invited you to witness our brand new product launch.';
+    }
+    if ("Date_3" != null) {
+      document.getElementById("Date_3").innerHTML = localStorage.getItem("date_3") || '3 May 2021';
+    }
+    if ("Time_3" != null) {
+      document.getElementById("Time_3").innerHTML = localStorage.getItem("time_3") || '12pm';
+    }
+    if ("Place_3" != null) {
+      document.getElementById("Place_3").innerHTML = localStorage.getItem("place_3") || 'Ballroom';
+    }
+     </script>
   </body>
 </html>
