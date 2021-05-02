@@ -4,6 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script>
+    function changeMe(){
+      var company = document.getElementById("company").value;
+      var event = document.getElementById("event").value;
+      var text = document.getElementById("text").value;
+      var date = document.getElementById("date").value;
+      var time = document.getElementById("time").value;
+      var place = document.getElementById("place").value;
+
+      var myBox1 = document.getElementById("Company");
+      myBox1.innerHTML = company;
+      var myBox2 = document.getElementById("Event");
+      myBox2.innerHTML = event;
+      var myBox3 = document.getElementById("Text");
+      myBox3.innerHTML = text;
+      var myBox4 = document.getElementById("Date");
+      myBox4.innerHTML = date;
+      var myBox5 = document.getElementById("Time");
+      myBox5.innerHTML = time;
+      var myBox6 = document.getElementById("Place");
+      myBox6.innerHTML = place;
+}
+//     </script>
 
     <style media="screen">
     *{
@@ -132,7 +155,7 @@
       border-style: hidden;
     }
 
-    #Perkara{
+    #Event{
       font-size: 30px;
       position: relative;
       top: 200px;
@@ -389,7 +412,7 @@
     <div class="container">
       <div class="box">
         <div id="Company">Google</div>
-        <div id="Perkara">COMPANY STAFF MEETING</div>
+        <div id="Event">COMPANY STAFF MEETING</div>
         <div id="Text">We are having an annual meeting for the company and would like to invite you.</div>
         <div id="Date">3 May 2021</div>
         <div id="Time">12pm</div>
@@ -408,8 +431,8 @@
       <label>Company:</label>
       <input type="text" id="company" placeholder="Enter your company name" size="25"> <br>
 
-      <label>Perkara:</label>
-      <input type="text" id="perkara" placeholder="Enter perkara name" size="25"><br>
+      <label>Event:</label>
+      <input type="text" id="event" placeholder="Enter event name" size="25"><br>
 
       <label>Text:</label>
       <input type="text" id="text" placeholder="Enter text" size="25"><br>
@@ -429,7 +452,7 @@
 
   <div class="save">
     <div class="save1">Save this template</div>
-    <button type="button" onclick="rememberMe()" id="button1">Save</button>
+    <button type="button" id="button1">Save</button>
   </div>
   </div>
 
@@ -445,64 +468,5 @@
         </ul>
       </footer>
     </div>
-
-    <script>
-    perkara changeMe(){
-      var company = document.getElementById("company").value;
-      var perkara = document.getElementById("perkara").value;
-      var text = document.getElementById("text").value;
-      var date = document.getElementById("date").value;
-      var time = document.getElementById("time").value;
-      var place = document.getElementById("place").value;
-
-      var myBox1 = document.getElementById("Company");
-      myBox1.innerHTML = company;
-      var myBox2 = document.getElementById("Perkara");
-      myBox2.innerHTML = perkara;
-      var myBox3 = document.getElementById("Text");
-      myBox3.innerHTML = text;
-      var myBox4 = document.getElementById("Date");
-      myBox4.innerHTML = date;
-      var myBox5 = document.getElementById("Time");
-      myBox5.innerHTML = time;
-      var myBox6 = document.getElementById("Place");
-      myBox6.innerHTML = place;
-    }
-
-    perkara rememberMe(){
-      localStorage.setItem("company", company.value);
-      localStorage.setItem("perkara", perkara.value);
-      localStorage.setItem("text", text.value);
-      localStorage.setItem("date", date.value);
-      localStorage.setItem("time", time.value);
-      localStorage.setItem("place", place.value);
-
-      document.getElementById("Company").innerHTML = localStorage.getItem("company");
-      document.getElementById("Perkara").innerHTML = localStorage.getItem("perkara");
-      document.getElementById("Text").innerHTML = localStorage.getItem("text");
-      document.getElementById("Date").innerHTML = localStorage.getItem("date");
-      document.getElementById("Time").innerHTML = localStorage.getItem("time");
-      document.getElementById("Place").innerHTML = localStorage.getItem("place");
-    }
-
-    if ("Company" != null) {
-      document.getElementById("Company").innerHTML = localStorage.getItem("company") || 'Google';
-    }
-    if ("Perkara" != null) {
-      document.getElementById("Perkara").innerHTML = localStorage.getItem("perkara") || 'COMPANY STAFF MEETING';
-    }
-    if ("Text" != null) {
-      document.getElementById("Text").innerHTML = localStorage.getItem("text") || 'We are having an annual meeting for the company and would like to invite you.';
-    }
-    if ("Date_3" != null) {
-      document.getElementById("Date").innerHTML = localStorage.getItem("date") || '3 May 2021';
-    }
-    if ("Time_3" != null) {
-      document.getElementById("Time").innerHTML = localStorage.getItem("time") || '12pm';
-    }
-    if ("Place_3" != null) {
-      document.getElementById("Place").innerHTML = localStorage.getItem("place") || 'Conference Room';
-    }
-     </script>
   </body>
 </html>
