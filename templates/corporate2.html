@@ -35,8 +35,8 @@
 
     nav ul li a{
       font-size: 18px;
-      text-decoration: none;
-      text-transform: uppercase;
+      text_2-decoration: none;
+      text_2-transform: uppercase;
       padding: 7px 13px;
       border-radius: 3px;
       color: #333;
@@ -81,7 +81,7 @@
         background: lightpink;
         top: 80px;
         left: -100%;
-        text-align: center;
+        text_2-align: center;
         transition: all 0.5s;
         z-index: 9;
       }
@@ -111,7 +111,7 @@
       right: 40px;
     }
 
-    #Company{
+    #Company_2{
       font-size: 25px;
       position: relative;
       top: 50px;
@@ -121,7 +121,7 @@
       border-style: hidden;
     }
 
-    #Text{
+    #Text_2{
       font-size: 18px;
       position: relative;
       bottom: 20px;
@@ -132,7 +132,7 @@
       border-style: hidden;
     }
 
-    #Perkara{
+    #Perkara_2{
       font-size: 30px;
       position: relative;
       top: 200px;
@@ -143,7 +143,7 @@
       border-style: hidden;
     }
 
-    #Date{
+    #Date_4{
       font-size: 20px;
       position: relative;
       top: 180px;
@@ -154,7 +154,7 @@
       border-style: hidden;
     }
 
-    #Time{
+    #Time_4{
       font-size: 20px;
       position: relative;
       top: 180px;
@@ -165,7 +165,7 @@
       border-style: hidden;
     }
 
-    #Place{
+    #Place_4{
       font-size: 20px;
       position: relative;
       top: 200px;
@@ -241,7 +241,7 @@
       padding: 10px;
       position: relative;
       display: flex;
-      text-align: center;
+      text_2-align: center;
       justify-content: center;
     }
 
@@ -315,8 +315,8 @@
 
     footer ul li a{
       font-size: 18px;
-      text-decoration: none;
-      text-transform: uppercase;
+      text_2-decoration: none;
+      text_2-transform: uppercase;
       padding: 7px 13px;
       border-radius: 3px;
       color: #333;
@@ -388,12 +388,12 @@
   <div class="main">
     <div class="container">
       <div class="box">
-        <div id="Company">Google</div>
-        <div id="Perkara">COMPANY STAFF MEETING</div>
-        <div id="Text">We are having an annual meeting for the company and would like to invite you.</div>
-        <div id="Date">3 May 2021</div>
-        <div id="Time">12pm</div>
-        <div id="Place">Conference Room</div>
+        <div id="Company_2">Google</div>
+        <div id="Perkara_2">COMPANY STAFF MEETING</div>
+        <div id="Text_2">We are having an annual meeting for the company and would like to invite you.</div>
+        <div id="Date_4">3 May 2021</div>
+        <div id="Time_4">12pm</div>
+        <div id="Place_4">Conference Room</div>
         <hr class="hr">
         <hr class="hr1">
         <hr class="hr2">
@@ -406,22 +406,22 @@
 <div class="formsec">
     <div class="form">
       <label>Company:</label>
-      <input type="text" id="company" placeholder="Enter your company name" size="25"> <br>
+      <input type="text" id="company_2" placeholder="Enter your company name" size="25"> <br>
 
-      <label>Perkara:</label>
-      <input type="text" id="perkara" placeholder="Enter perkara name" size="25"><br>
+      <label>Event:</label>
+      <input type="text" id="perkara_2" placeholder="Enter event name" size="25"><br>
 
       <label>Text:</label>
-      <input type="text" id="text" placeholder="Enter text" size="25"><br>
+      <input type="text" id="text_2" placeholder="Enter text" size="25"><br>
 
       <label>Date:</label>
-      <input type="text" id="date" placeholder="Enter date" size="25"><br>
+      <input type="text" id="date_4" placeholder="Enter date" size="25"><br>
 
       <label>Time:</label>
-      <input type="text" id="time" placeholder="Enter time" size="25"><br>
+      <input type="text" id="time_4" placeholder="Enter time" size="25"><br>
 
       <label>Place:</label>
-      <input type="text" id="place" placeholder="Enter place" size="25"><br>
+      <input type="text" id="place_4" placeholder="Enter place" size="25"><br>
 
       <button type="button" onclick="changeMe()" id="entry">Submit!</button>
     </div>
@@ -447,61 +447,61 @@
     </div>
 
     <script>
-    perkara changeMe(){
-      var company = document.getElementById("company").value;
-      var perkara = document.getElementById("perkara").value;
-      var text = document.getElementById("text").value;
-      var date = document.getElementById("date").value;
-      var time = document.getElementById("time").value;
-      var place = document.getElementById("place").value;
+    function changeMe(){
+      var company_2 = document.getElementById("company_2").value;
+      var perkara_2 = document.getElementById("perkara_2").value;
+      var text_2 = document.getElementById("text_2").value;
+      var date_4 = document.getElementById("date_4").value;
+      var time_4 = document.getElementById("time_4").value;
+      var place_4 = document.getElementById("place_4").value;
 
-      var myBox1 = document.getElementById("Company");
-      myBox1.innerHTML = company;
-      var myBox2 = document.getElementById("Perkara");
-      myBox2.innerHTML = perkara;
-      var myBox3 = document.getElementById("Text");
-      myBox3.innerHTML = text;
-      var myBox4 = document.getElementById("Date");
-      myBox4.innerHTML = date;
-      var myBox5 = document.getElementById("Time");
-      myBox5.innerHTML = time;
-      var myBox6 = document.getElementById("Place");
-      myBox6.innerHTML = place;
-    }
-
-    perkara rememberMe(){
-      localStorage.setItem("company", company.value);
-      localStorage.setItem("perkara", perkara.value);
-      localStorage.setItem("text", text.value);
-      localStorage.setItem("date", date.value);
-      localStorage.setItem("time", time.value);
-      localStorage.setItem("place", place.value);
-
-      document.getElementById("Company").innerHTML = localStorage.getItem("company");
-      document.getElementById("Perkara").innerHTML = localStorage.getItem("perkara");
-      document.getElementById("Text").innerHTML = localStorage.getItem("text");
-      document.getElementById("Date").innerHTML = localStorage.getItem("date");
-      document.getElementById("Time").innerHTML = localStorage.getItem("time");
-      document.getElementById("Place").innerHTML = localStorage.getItem("place");
+      var myBox1 = document.getElementById("Company_2");
+      myBox1.innerHTML = company_2;
+      var myBox2 = document.getElementById("Perkara_2");
+      myBox2.innerHTML = perkara_2;
+      var myBox3 = document.getElementById("Text_2");
+      myBox3.innerHTML = text_2;
+      var myBox4 = document.getElementById("Date_4");
+      myBox4.innerHTML = date_4;
+      var myBox5 = document.getElementById("Time_4");
+      myBox5.innerHTML = time_4;
+      var myBox6 = document.getElementById("Place_4");
+      myBox6.innerHTML = place_4;
     }
 
-    if ("Company" != null) {
-      document.getElementById("Company").innerHTML = localStorage.getItem("company") || 'Google';
+    function rememberMe(){
+      localStorage.setItem("company_2", company_2.value);
+      localStorage.setItem("perkara_2", perkara_2.value);
+      localStorage.setItem("text_2", text_2.value);
+      localStorage.setItem("date_4", date_4.value);
+      localStorage.setItem("time_4", time_4.value);
+      localStorage.setItem("place_4", place_4.value);
+
+      document.getElementById("Company_2").innerHTML = localStorage.getItem("company_2");
+      document.getElementById("Perkara_2").innerHTML = localStorage.getItem("perkara_2");
+      document.getElementById("Text_2").innerHTML = localStorage.getItem("text_2");
+      document.getElementById("Date_4").innerHTML = localStorage.getItem("date_4");
+      document.getElementById("Time_4").innerHTML = localStorage.getItem("time_4");
+      document.getElementById("Place_4").innerHTML = localStorage.getItem("place_4");
     }
-    if ("Perkara" != null) {
-      document.getElementById("Perkara").innerHTML = localStorage.getItem("perkara") || 'COMPANY STAFF MEETING';
+
+    if ("Company_2" != null) {
+      document.getElementById("Company_2").innerHTML = localStorage.getItem("company_2") || 'Google';
     }
-    if ("Text" != null) {
-      document.getElementById("Text").innerHTML = localStorage.getItem("text") || 'We are having an annual meeting for the company and would like to invite you.';
+    if ("Perkara_2" != null) {
+      document.getElementById("Perkara_2").innerHTML = localStorage.getItem("perkara_2") || 'COMPANY STAFF MEETING';
     }
-    if ("Date_3" != null) {
-      document.getElementById("Date").innerHTML = localStorage.getItem("date") || '3 May 2021';
+    if ("Text_2" != null) {
+      document.getElementById("Text_2").innerHTML = localStorage.getItem("text_2") || 'We are having an annual meeting for the company and would like to invite you.';
     }
-    if ("Time_3" != null) {
-      document.getElementById("Time").innerHTML = localStorage.getItem("time") || '12pm';
+    if ("Date_4_3" != null) {
+      document.getElementById("Date_4").innerHTML = localStorage.getItem("date_4") || '3 May 2021';
     }
-    if ("Place_3" != null) {
-      document.getElementById("Place").innerHTML = localStorage.getItem("place") || 'Conference Room';
+    if ("Time_4_3" != null) {
+      document.getElementById("Time_4").innerHTML = localStorage.getItem("time_4") || '12pm';
+    }
+    if ("Place_4_3" != null) {
+      document.getElementById("Place_4").innerHTML = localStorage.getItem("place_4") || 'Conference Room';
     }
      </script>
   </body>
