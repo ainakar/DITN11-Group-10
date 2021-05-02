@@ -196,12 +196,14 @@ nav ul li a:hover{
   font-size: 20px;
   cursor: pointer;
   border: 4px dashed;
+  border-color: #F2F0CE;
   border-radius: 10px;
   margin-left: 41.5%;
 }
 
 .drop-zone-over {
   border-style: solid;
+  border-color: #F2F0CE;
 }
 
 .drop-zone-input {
