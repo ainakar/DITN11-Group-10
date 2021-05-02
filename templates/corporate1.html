@@ -149,7 +149,7 @@
       border-style: hidden;
     }
 
-    #Date{
+    #Date_3{
       font-size: 20px;
       position: relative;
       top: 160px;
@@ -160,7 +160,7 @@
       border-style: hidden;
     }
 
-    #Time{
+    #Time_3{
       font-size: 20px;
       position: relative;
       top: 110px;
@@ -220,7 +220,7 @@
       transform: rotate(-135deg);
     }
 
-    #Place{
+    #Place_3{
       font-size: 20px;
       position: relative;
       top: 200px;
@@ -409,14 +409,14 @@
         <p class="invite">YOU ARE INVITED!</p>
         <div id="Event">PRODUCT LAUNCHING EVENT</div>
         <div id="Text">Our company has invited you to witness our brand new product launch.</div>
-        <div id="Date">3 May 2021</div>
+        <div id="Date_3">3 May 2021</div>
         <hr class="hr">
         <hr class="hr1">
         <hr class="hr2">
         <hr class="hr3">
         <hr class="hr4">
-        <div id="Time">12pm</div>
-        <div id="Place">Ballroom</div>
+        <div id="Time_3">12pm</div>
+        <div id="Place_3">Ballroom</div>
       </div>
     </div>
     </div>
@@ -424,22 +424,22 @@
 <div class="formsec">
     <div class="form">
       <label>Company:</label>
-      <input type="text" id="company" placeholder="Enter your company name" size="25"> <br>
+      <input type="text" id="company" place_3holder="Enter your company name" size="25"> <br>
 
       <label>Event:</label>
-      <input type="text" id="event" placeholder="Enter event name" size="25"><br>
+      <input type="text" id="event" place_3holder="Enter event name" size="25"><br>
 
       <label>Text:</label>
-      <input type="text" id="text" placeholder="Enter text" size="25"><br>
+      <input type="text" id="text" place_3holder="Enter text" size="25"><br>
 
-      <label>Date:</label>
-      <input type="text" id="date" placeholder="Enter date" size="25"><br>
+      <label>Date_3:</label>
+      <input type="text" id="date_3" place_3holder="Enter date_3" size="25"><br>
 
-      <label>Time:</label>
-      <input type="text" id="time" placeholder="Enter time" size="25"><br>
+      <label>Time_3:</label>
+      <input type="text" id="time_3" place_3holder="Enter time_3" size="25"><br>
 
-      <label>Place:</label>
-      <input type="text" id="place" placeholder="Enter place" size="25"><br>
+      <label>Place_3:</label>
+      <input type="text" id="place_3" place_3holder="Enter place_3" size="25"><br>
 
       <button type="button" onclick="changeMe()" id="entry">Submit!</button>
     </div>
@@ -469,9 +469,9 @@
       var company = document.getElementById("company").value;
       var event = document.getElementById("event").value;
       var text = document.getElementById("text").value;
-      var date = document.getElementById("date").value;
-      var time = document.getElementById("time").value;
-      var place = document.getElementById("place").value;
+      var date_3 = document.getElementById("date_3").value;
+      var time_3 = document.getElementById("time_3").value;
+      var place_3 = document.getElementById("place_3").value;
 
       var myBox1 = document.getElementById("Company");
       myBox1.innerHTML = company;
@@ -479,47 +479,47 @@
       myBox2.innerHTML = event;
       var myBox3 = document.getElementById("Text");
       myBox3.innerHTML = text;
-      var myBox4 = document.getElementById("Date");
-      myBox4.innerHTML = date;
-      var myBox5 = document.getElementById("Time");
-      myBox5.innerHTML = time;
-      var myBox6 = document.getElementById("Place");
-      myBox6.innerHTML = place;
+      var myBox4 = document.getElementById("Date_3");
+      myBox4.innerHTML = date_3;
+      var myBox5 = document.getElementById("Time_3");
+      myBox5.innerHTML = time_3;
+      var myBox6 = document.getElementById("Place_3");
+      myBox6.innerHTML = place_3;
     }
 
     function rememberMe(){
       localStorage.setItem("company", company.value);
       localStorage.setItem("event", event.value);
       localStorage.setItem("text", text.value);
-      localStorage.setItem("date", date.value);
-      localStorage.setItem("time", time.value);
-      localStorage.setItem("place", place.value);
+      localStorage.setItem("date_3", date_3.value);
+      localStorage.setItem("time_3", time_3.value);
+      localStorage.setItem("place_3", place_3.value);
 
       document.getElementById("Company").innerHTML = localStorage.getItem("company");
       document.getElementById("Event").innerHTML = localStorage.getItem("event");
       document.getElementById("Text").innerHTML = localStorage.getItem("text");
-      document.getElementById("Date").innerHTML = localStorage.getItem("date");
-      document.getElementById("Time").innerHTML = localStorage.getItem("time");
-      document.getElementById("Place").innerHTML = localStorage.getItem("place");
+      document.getElementById("Date_3").innerHTML = localStorage.getItem("date_3");
+      document.getElementById("Time_3").innerHTML = localStorage.getItem("time_3");
+      document.getElementById("Place_3").innerHTML = localStorage.getItem("place_3");
     }
 
     if ("Company" != null) {
-      document.getElementById("Company").innerHTML = localStorage.getItem("company") || 'Wedding Ceremony';
+      document.getElementById("Company").innerHTML = localStorage.getItem("company") || 'Tesla';
     }
     if ("Event" != null) {
-      document.getElementById("Event").innerHTML = localStorage.getItem("event") || 'John Doe';
+      document.getElementById("Event").innerHTML = localStorage.getItem("event") || 'PRODUCT LAUNCHING EVENT';
     }
     if ("Text" != null) {
-      document.getElementById("Text").innerHTML = localStorage.getItem("text") || 'Jane Doe';
+      document.getElementById("Text").innerHTML = localStorage.getItem("text") || 'Our company has invited you to witness our brand new product launch.';
     }
-    if ("Date" != null) {
-      document.getElementById("Date").innerHTML = localStorage.getItem("date") || '3 May 2021';
+    if ("Date_3" != null) {
+      document.getElementById("Date_3").innerHTML = localStorage.getItem("date_3") || '3 May 2021';
     }
-    if ("Time" != null) {
-      document.getElementById("Time").innerHTML = localStorage.getItem("time") || '12pm';
+    if ("Time_3" != null) {
+      document.getElementById("Time_3").innerHTML = localStorage.getItem("time_3") || '12pm';
     }
-    if ("Place" != null) {
-      document.getElementById("Place").innerHTML = localStorage.getItem("place") || 'JP Amphitheatre';
+    if ("Place_3" != null) {
+      document.getElementById("Place_3").innerHTML = localStorage.getItem("place_3") || 'Ballroom';
     }
      </script>
   </body>
