@@ -93,3 +93,18 @@ document.querySelectorAll(".drop-zone-input").forEach(inputElement => {
   }
 
 });
+
+function rememberMe() {
+  localStorage.setItem("recepient2", recepient2.value);
+  localStorage.setItem("sender2", sender2.value);
+
+  document.getElementById("kepada2").innerHTML = localStorage.getItem("recepient2");
+  document.getElementById("daripada2").innerHTML = localStorage.getItem("sender2");
+}
+
+if ("kepada2" != null) {
+  document.getElementById("kepada2").innerHTML = localStorage.getItem("recepient2");
+}
+if ("daripada2" != null) {
+  document.getElementById("daripada2").innerHTML = localStorage.getItem("sender2");
+}

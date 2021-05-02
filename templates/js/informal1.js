@@ -95,3 +95,18 @@ document.querySelectorAll(".drop-zone-input").forEach(inputElement => {
   }
 
 });
+
+function rememberMe() {
+  localStorage.setItem("recepient", recepient.value);
+  localStorage.setItem("sender", sender.value);
+
+  document.getElementById("kepada").innerHTML = localStorage.getItem("recepient");
+  document.getElementById("daripada").innerHTML = localStorage.getItem("sender");
+}
+
+if ("kepada" != null) {
+  document.getElementById("kepada").innerHTML = localStorage.getItem("recepient");
+}
+if ("daripada" != null) {
+  document.getElementById("daripada").innerHTML = localStorage.getItem("sender");
+}

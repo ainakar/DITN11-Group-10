@@ -30,13 +30,13 @@
       <img id="inside-pic" src="images/cake_celebration.png">
 
       <div class="details1">
-        <label>To: </label>
-        <input type="text">
+        <label>To: </label><span id="kepada2"></span><br>
+        <input id="recepient2" type="text">
       </div>
 
       <div class="details2">
-        <label>From: </label>
-        <input type="text">
+        <label>From: </label><span id="daripada2"></span><br>
+        <input id="sender2" type="text" style="margin-left: 1.5%">
       </div>
 
       <div class="open">
@@ -58,8 +58,8 @@
       <div id="message">
         <textarea class="storage" type="text" placeholder="Because birthday wishes doesn't have to be boring"></textarea>
         <p class="message"></p>
-        <button class="button" type="button">Save</button>
       </div>
+      <button class="button" onclick="rememberMe()" type="button">Save</button>
 
       <p>
         <button onclick="close_card()">Click to close</button>

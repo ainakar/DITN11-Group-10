@@ -30,8 +30,8 @@
       </p>
 
       <div class="form1">
-        <label>To: </label>
-        <input type="text">
+        <label>To: </label><span id="kepada"></span><br>
+        <input id="recepient" type="text">
       </div>
 
 
@@ -42,8 +42,8 @@
       </div>
 
       <div class="form2">
-        <label>From: </label>
-        <input type="text">
+        <label>From: </label><span id="daripada"></span><br>
+        <input id="sender" type="text">
       </div>
 
       <div class="open">
@@ -61,8 +61,8 @@
       <div id="message">
         <input class="storage" type="text" placeholder="Your message here!">
         <p class="message"></p>
-        <button class="button" type="button">Save</button>
       </div>
+      <button class="button" onclick="rememberMe()" type="button">Save</button>
 
       <p>
         <button onclick="close_card()">Click to close</button>

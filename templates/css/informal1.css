@@ -203,7 +203,7 @@ nav ul li a:hover{
   border: 4px dashed;
   border-color: white;
   border-radius: 10px;
-  margin-left: 46%;
+  margin-left: 43%;
 }
 
 @media (max-width:1050px) {
@@ -231,7 +231,7 @@ nav ul li a:hover{
   position: relative;
 }
 
-.drop-zone-thumbnail::after {
+/* .drop-zone-thumbnail::after {
   content: attr(data-label);
   position: absolute;
   bottom: 0;
@@ -242,7 +242,7 @@ nav ul li a:hover{
   background: rgba(0, 0, 0, 0.75);
   font-size: 14px;
   text-align: center;
-}
+} */
 
 .form1{
   position: relative;
