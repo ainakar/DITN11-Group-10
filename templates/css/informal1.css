@@ -231,7 +231,7 @@ nav ul li a:hover{
   position: relative;
 }
 
-/* .drop-zone-thumbnail::after {
+.drop-zone-thumbnail::after {
   content: attr(data-label);
   position: absolute;
   bottom: 0;
