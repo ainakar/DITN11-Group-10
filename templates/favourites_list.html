@@ -179,9 +179,16 @@
       </ul>
     </nav>
 
-    <div id="display">
-
-    </div>
+    <table>
+      <tr>
+          <th>Templates</th>
+          <th>Actions</th>
+      </tr>
+      <tr>
+          <td>Template Name</td>
+          <td><button class="addToFavBtn">Add to Favorites</button></td>
+      </tr>
+    </table>
 
     <div class="footer">
       <footer>
@@ -196,10 +203,26 @@
       </footer>
     </div>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script>
-  var favorites = JSON.parse(localStorage.getItem("favorites"));
 
-  document.getElementById("display").innerHTML = localStorage.getItem("favorites");
+  $('.addToFavBtn').on('click', event => {
+  var template = $(event.target).parents()[1].firstElementChild.innerHTML;
+
+  var favorites = localStorage.getItem("favorites");
+  if (!favorites){
+    localStorage.setItem("favorites", JSON.stringify({favTemplate:[]}));
+    favorites = JSON.parse(localStorage.getItem("favorites"));
+  }else{
+    favorites = JSON.parse(favorites);
+  }
+
+  favorites.favTemplate.push(template);
+
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+
+  });
+
   </script>
   </body>
 </html>

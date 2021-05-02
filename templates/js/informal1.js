@@ -110,3 +110,20 @@ if ("kepada" != null) {
 if ("daripada" != null) {
   document.getElementById("daripada").innerHTML = localStorage.getItem("sender");
 }
+
+$('.addToFavBtn').on('click', event => {
+var template2 = $(event.target).parents()[1].firstElementChild.innerHTML;
+
+var favorites = localStorage.getItem("favorites");
+if (!favorites){
+  localStorage.setItem("favorites", JSON.stringify({favTemplate:[]}));
+  favorites = JSON.parse(localStorage.getItem("favorites"));
+}else{
+  favorites = JSON.parse(favorites);
+}
+
+favorites.favTemplate.push(template2);
+
+localStorage.setItem("favorites", JSON.stringify(favorites));
+
+});
