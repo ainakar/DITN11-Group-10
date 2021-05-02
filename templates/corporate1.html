@@ -127,7 +127,7 @@
       font-size: 20px;
     }
 
-    #Event{
+    #Perkara{
       font-size: 30px;
       position: relative;
       top: 100px;
@@ -407,7 +407,7 @@
       <div class="box">
         <div id="Company">Tesla</div>
         <p class="invite">YOU ARE INVITED!</p>
-        <div id="Event">PRODUCT LAUNCHING EVENT</div>
+        <div id="Perkara">PRODUCT LAUNCHING EVENT</div>
         <div id="Text">Our company has invited you to witness our brand new product launch.</div>
         <div id="Date_3">3 May 2021</div>
         <hr class="hr">
@@ -426,8 +426,8 @@
       <label>Company:</label>
       <input type="text" id="company" place_3holder="Enter your company name" size="25"> <br>
 
-      <label>Event:</label>
-      <input type="text" id="event" place_3holder="Enter event name" size="25"><br>
+      <label>Perkara:</label>
+      <input type="text" id="perkara" place_3holder="Enter perkara name" size="25"><br>
 
       <label>Text:</label>
       <input type="text" id="text" place_3holder="Enter text" size="25"><br>
@@ -467,7 +467,7 @@
     <script>
     function changeMe(){
       var company = document.getElementById("company").value;
-      var event = document.getElementById("event").value;
+      var perkara = document.getElementById("perkara").value;
       var text = document.getElementById("text").value;
       var date_3 = document.getElementById("date_3").value;
       var time_3 = document.getElementById("time_3").value;
@@ -475,8 +475,8 @@
 
       var myBox1 = document.getElementById("Company");
       myBox1.innerHTML = company;
-      var myBox2 = document.getElementById("Event");
-      myBox2.innerHTML = event;
+      var myBox2 = document.getElementById("Perkara");
+      myBox2.innerHTML = perkara;
       var myBox3 = document.getElementById("Text");
       myBox3.innerHTML = text;
       var myBox4 = document.getElementById("Date_3");
@@ -489,14 +489,14 @@
 
     function rememberMe(){
       localStorage.setItem("company", company.value);
-      localStorage.setItem("event", event.value);
+      localStorage.setItem("perkara", perkara.value);
       localStorage.setItem("text", text.value);
       localStorage.setItem("date_3", date_3.value);
       localStorage.setItem("time_3", time_3.value);
       localStorage.setItem("place_3", place_3.value);
 
       document.getElementById("Company").innerHTML = localStorage.getItem("company");
-      document.getElementById("Event").innerHTML = localStorage.getItem("event");
+      document.getElementById("Perkara").innerHTML = localStorage.getItem("perkara");
       document.getElementById("Text").innerHTML = localStorage.getItem("text");
       document.getElementById("Date_3").innerHTML = localStorage.getItem("date_3");
       document.getElementById("Time_3").innerHTML = localStorage.getItem("time_3");
@@ -506,8 +506,8 @@
     if ("Company" != null) {
       document.getElementById("Company").innerHTML = localStorage.getItem("company") || 'Tesla';
     }
-    if ("Event" != null) {
-      document.getElementById("Event").innerHTML = localStorage.getItem("event") || 'PRODUCT LAUNCHING EVENT';
+    if ("Perkara" != null) {
+      document.getElementById("Perkara").innerHTML = localStorage.getItem("perkara") || 'PRODUCT LAUNCHING EVENT';
     }
     if ("Text" != null) {
       document.getElementById("Text").innerHTML = localStorage.getItem("text") || 'Our company has invited you to witness our brand new product launch.';
