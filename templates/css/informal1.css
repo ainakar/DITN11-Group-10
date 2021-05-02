@@ -201,8 +201,9 @@ nav ul li a:hover{
   font-size: 20px;
   cursor: pointer;
   border: 4px dashed;
+  border-color: white;
   border-radius: 10px;
-  margin-left: 45%;
+  margin-left: 43.5%;
 }
 
 @media (max-width:1050px) {
@@ -213,6 +214,7 @@ nav ul li a:hover{
 
 .drop-zone-over {
   border-style: solid;
+  border-color: white;
 }
 
 .drop-zone-input {
@@ -224,13 +226,13 @@ nav ul li a:hover{
   height: 100%;
   /* border-radius: 10px; /*cosmetic purposes */ */
   overflow: hidden;
-  background-color: lightgrey;
+  background-color: #FFCECD;
   background-size: cover;
   position: relative;
 }
 
-.drop-zone-thumbnail::after {
-  /* content: attr(data-label); */
+/* .drop-zone-thumbnail::after {
+  content: attr(data-label);
   position: absolute;
   bottom: 0;
   left: 0;

@@ -27,7 +27,7 @@
         Happy Birthday!
       </p>
 
-      <img id="inside-pic" src="images/birthday-cake.png">
+      <img id="inside-pic" src="images/cake_celebration.png">
 
       <div class="details1">
         <label>To: </label>
@@ -49,12 +49,17 @@
         Happy Birthday!
       </p>
 
-      <img id="deco" src="images/space.png" alt="">
+      <div class="drop-zone">
+        <span class="drop-zone-prompt">Upload an image of something they like here!</span>
+        <input type="file" name="myFile" class="drop-zone-input">
+      </div>
+      <br>
 
-      <p id="message">
-        <label>Your message here!</label><br>
-        <textarea placeholder="Because birthday wishes doesn't have to be boring"></textarea>
-      </p>
+      <div id="message">
+        <textarea class="storage" type="text" placeholder="Because birthday wishes doesn't have to be boring"></textarea>
+        <p class="message"></p>
+        <button class="button" type="button">Save</button>
+      </div>
 
       <p>
         <button onclick="close_card()">Click to close</button>
