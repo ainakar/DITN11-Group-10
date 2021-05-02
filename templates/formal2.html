@@ -1,33 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>Formal2</title>
+    <title_2>Formal2</title_2>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <script>
-    function changeMe(){
-      var name1 = document.getElementById("name1").value;
-      var name2 = document.getElementById("name2").value;
-      var title = document.getElementById("title").value;
-      var date = document.getElementById("date").value;
-      var time = document.getElementById("time").value;
-      var place = document.getElementById("place").value;
-
-      var myBox1 = document.getElementById("Name1");
-      myBox1.innerHTML = name1;
-      var myBox2 = document.getElementById("Name2");
-      myBox2.innerHTML = name2;
-      var myBox3 = document.getElementById("Title");
-      myBox3.innerHTML = title;
-      var myBox4 = document.getElementById("Date");
-      myBox4.innerHTML = date;
-      var myBox5 = document.getElementById("Time");
-      myBox5.innerHTML = time;
-      var myBox6 = document.getElementById("Place");
-      myBox6.innerHTML = place;
-}
-    </script>
 
     <style media="screen">
     *{
@@ -133,7 +110,7 @@
       top: 40px;
     }
 
-      #Name1{
+      #Name1_2{
         font-family: 'Cookie', cursive;
         font-size: 45px;
         position: relative;
@@ -146,7 +123,7 @@
         border-style: hidden;
       }
 
-      #Name2{
+      #Name2_2{
         font-family: 'Cookie', cursive;
         font-size: 45px;
         position: relative;
@@ -174,7 +151,7 @@
         top: 140px;
       }
 
-      #Title{
+      #Title_2{
         font-family: 'Cookie', cursive;
         font-size: 35px;
         position: relative;
@@ -207,7 +184,7 @@
         letter-spacing: 1px;
       }
 
-      #Date{
+      #Date_2{
         font-family: 'Cookie', cursive;
         font-size: 25px;
         position: relative;
@@ -220,7 +197,7 @@
         border-style: hidden;
       }
 
-      #Time{
+      #Time_2{
         font-family: 'Cookie', cursive;
         font-size: 25px;
         position: relative;
@@ -233,7 +210,7 @@
         border-style: hidden;
       }
 
-      #Place{
+      #Place_2{
         font-family: 'Cookie', cursive;
         font-size: 25px;
         position: relative;
@@ -404,7 +381,7 @@
       }
     </style>
   </head>
-  <title></title>
+  <title_2></title_2>
   <body>
     <nav>
       <input type="checkbox" id="check">
@@ -424,16 +401,16 @@
     <div class="main">
     <div class="container">
       <div class="box">
-        <div id="Name1">John Doe</div>
-        <div id="Name2">Jane Doe</div>
+        <div id="Name1_2">John Doe</div>
+        <div id="Name2_2">Jane Doe</div>
         <p class="and">&</p>
         <p class="text">invites you to their</p>
-        <div id="Title">Wedding Ceremony</div>
+        <div id="Title_2">Wedding Ceremony</div>
         <p class="on">On:</p>
-        <div id="Date">3 May 2021</div>
-        <div id="Time">12pm</div>
+        <div id="Date_2">3 May 2021</div>
+        <div id="Time_2">12pm</div>
         <p class="venue">Venue:</p>
-        <div id="Place">JP Amphitheatre</div>
+        <div id="Place_2">JP Amphitheatre</div>
         <hr class="hr">
       </div>
     </div>
@@ -442,22 +419,22 @@
 <div class="formsec">
   <div class="form">
     <label>Name 1:</label>
-    <input type="text" id="name1" placeholder="Enter name 1" size="25"> <br>
+    <input type="text" id="name1_2" place_2holder="Enter name 1" size="25"> <br>
 
     <label>Name 2:</label>
-    <input type="text" id="name2" placeholder="Enter name 2" size="25"><br>
+    <input type="text" id="name2_2" place_2holder="Enter name 2" size="25"><br>
 
-    <label>Title:</label>
-    <input type="text" id="title" placeholder="e.g Wedding Ceremony" size="25"><br>
+    <label>Title_2:</label>
+    <input type="text" id="title_2" place_2holder="e.g Wedding Ceremony" size="25"><br>
 
-    <label>Date:</label>
-    <input type="text" id="date" placeholder="Enter date" size="25"><br>
+    <label>Date_2:</label>
+    <input type="text" id="date_2" place_2holder="Enter date_2" size="25"><br>
 
-    <label>Time:</label>
-    <input type="text" id="time" placeholder="Enter time" size="25"><br>
+    <label>Time_2:</label>
+    <input type="text" id="time_2" place_2holder="Enter time_2" size="25"><br>
 
-    <label>Place:</label>
-    <input type="text" id="place" placeholder="Enter place" size="25"><br>
+    <label>Place_2:</label>
+    <input type="text" id="place_2" place_2holder="Enter place_2" size="25"><br>
 
     <button type="button" onclick="changeMe()" id="entry">Submit!</button>
   </div>
@@ -465,7 +442,7 @@
 
 <div class="save">
   <div class="save1">Save this template</div>
-  <button type="button" id="button1">Save</button>
+  <button type="button" onclick="rememberMe()" id="button1">Save</button>
 </div>
 </div>
 
@@ -481,5 +458,65 @@
     </ul>
   </footer>
 </div>
+
+<script>
+function changeMe(){
+  var name1_2 = document.getElementById("name1_2").value;
+  var name2_2 = document.getElementById("name2_2").value;
+  var title_2 = document.getElementById("title_2").value;
+  var date_2 = document.getElementById("date_2").value;
+  var time_2 = document.getElementById("time_2").value;
+  var place_2 = document.getElementById("place_2").value;
+
+  var myBox1 = document.getElementById("Name1_2");
+  myBox1.innerHTML = name1_2;
+  var myBox2 = document.getElementById("Name2_2");
+  myBox2.innerHTML = name2_2;
+  var myBox3 = document.getElementById("Title_2");
+  myBox3.innerHTML = title_2;
+  var myBox4 = document.getElementById("Date_2");
+  myBox4.innerHTML = date_2;
+  var myBox5 = document.getElementById("Time_2");
+  myBox5.innerHTML = time_2;
+  var myBox6 = document.getElementById("Place_2");
+  myBox6.innerHTML = place_2;
+}
+
+function rememberMe(){
+  localStorage.setItem("name1_2", name1_2.value);
+  localStorage.setItem("name2_2", name2_2.value);
+  localStorage.setItem("title_2", title_2.value);
+  localStorage.setItem("date_2", date_2.value);
+  localStorage.setItem("time_2", time_2.value);
+  localStorage.setItem("place_2", place_2.value);
+
+  document.getElementById("Name1_2").innerHTML = localStorage.getItem("name1_2");
+  document.getElementById("Name2_2").innerHTML = localStorage.getItem("name2_2");
+  document.getElementById("Title_2").innerHTML = localStorage.getItem("title_2");
+  document.getElementById("Date_2").innerHTML = localStorage.getItem("date_2");
+  document.getElementById("Time_2").innerHTML = localStorage.getItem("time_2");
+  document.getElementById("Place_2").innerHTML = localStorage.getItem("place_2");
+}
+
+if ("Name1_2" != null) {
+  document.getElementById("Name1_2").innerHTML = localStorage.getItem("name1_2") || 'John Doe';
+}
+if ("Name2_2" != null) {
+  document.getElementById("Name2_2").innerHTML = localStorage.getItem("name2_2") || 'Jane Doe';
+}
+if ("Title_2" != null) {
+  document.getElementById("Title_2").innerHTML = localStorage.getItem("title_2") || 'Wedding Ceremony';
+}
+if ("Date_2" != null) {
+  document.getElementById("Date_2").innerHTML = localStorage.getItem("date_2") || '3 May 2021';
+}
+if ("Time_2" != null) {
+  document.getElementById("Time_2").innerHTML = localStorage.getItem("time_2") || '12pm';
+}
+if ("Place_2" != null) {
+  document.getElementById("Place_2").innerHTML = localStorage.getItem("place_2") || 'JP Amphitheatre';
+}
+
+</script>
   </body>
 </html>
