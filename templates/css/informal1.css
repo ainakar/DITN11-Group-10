@@ -218,12 +218,12 @@ nav ul li a:hover{
   height: 100%;
   border-radius: 10px; /*cosmetic purposes */
   overflow: hidden;
-  background-color: lightgrey;
+  background-color: #FFCECD;
   background-size: cover;
   position: relative;
 }
 
-.drop-zone-thumbnail::after {
+/* .drop-zone-thumbnail::after {
   content: attr(data-label);
   position: absolute;
   bottom: 0;
@@ -234,4 +234,4 @@ nav ul li a:hover{
   background: rgba(0, 0, 0, 0.75);
   font-size: 14px;
   text-align: center;
-}
+} */

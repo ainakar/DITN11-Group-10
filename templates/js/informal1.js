@@ -25,6 +25,7 @@ const saveToLocalStorage = () => {
 
 button.addEventListener('click', saveToLocalStorage);
 
+//DRAG AND DROP section
 document.querySelectorAll(".drop-zone-input").forEach(inputElement => {
   const dropZoneElement = inputElement.closest(".drop-zone");
 
@@ -78,7 +79,7 @@ document.querySelectorAll(".drop-zone-input").forEach(inputElement => {
       dropZoneElement.appendChild(thumbnailElement);
     }
 
-    thumbnailElement.dataset.label = file.name;
+    // thumbnailElement.dataset.label = file.name;
 
     //show thumbnail for image files
     if (file.type.startsWith("image/")) {
