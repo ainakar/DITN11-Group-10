@@ -26,7 +26,7 @@ nav ul li{
 }
 
 nav ul li a{
-  font-size: 18px;
+  font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
   padding: 7px 13px;
@@ -83,7 +83,7 @@ nav ul li a:hover{
     line-height: 50px;
   }
   nav ul li a{
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #check:checked ~ ul{
@@ -113,7 +113,7 @@ nav ul li a:hover{
     }
 
     footer ul li a{
-      font-size: 18px;
+      font-size: 15px;
       text-decoration: none;
       text-transform: uppercase;
       padding: 7px 13px;
@@ -159,8 +159,23 @@ nav ul li a:hover{
   text-align: center;
 }
 
-.details {
+.details1 {
   color: white;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+
+.details2{
+  color: white;
+  position: relative;
+  top: 20px;
+  right: 20px;
+}
+
+.open{
+  position: relative;
+  top: 30px;
 }
 
 #deco {

@@ -26,7 +26,7 @@ nav ul li{
 }
 
 nav ul li a{
-  font-size: 18px;
+  font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
   padding: 7px 13px;
@@ -113,7 +113,7 @@ nav ul li a:hover{
     }
 
     footer ul li a{
-      font-size: 18px;
+      font-size: 15px;
       text-decoration: none;
       text-transform: uppercase;
       padding: 7px 13px;
@@ -202,7 +202,13 @@ nav ul li a:hover{
   cursor: pointer;
   border: 4px dashed;
   border-radius: 10px;
-  margin-left: 43%;
+  margin-left: 45%;
+}
+
+@media (max-width:1050px) {
+  .drop-zone{
+    margin-left: 40%;
+  }
 }
 
 .drop-zone-over {
@@ -216,7 +222,7 @@ nav ul li a:hover{
 .drop-zone-thumbnail {
   width: 100%;
   height: 100%;
-  border-radius: 10px; /*cosmetic purposes */
+  /* border-radius: 10px; /*cosmetic purposes */ */
   overflow: hidden;
   background-color: lightgrey;
   background-size: cover;
@@ -224,7 +230,7 @@ nav ul li a:hover{
 }
 
 .drop-zone-thumbnail::after {
-  content: attr(data-label);
+  /* content: attr(data-label); */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -234,4 +240,19 @@ nav ul li a:hover{
   background: rgba(0, 0, 0, 0.75);
   font-size: 14px;
   text-align: center;
+}
+
+.form1{
+  position: relative;
+  bottom: 15px;
+}
+
+.form2{
+  position: relative;
+  top: 15px;
+}
+
+.open{
+  position: relative;
+  top: 30px;
 }

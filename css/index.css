@@ -9,7 +9,7 @@ body{
 /*whole nav section*/
 nav{
   background-image: linear-gradient(to bottom right, #ddd6f3, #faaca8);
-  height: 120px;
+  height: 150px;
   width: 100%;
   word-spacing: 30px;
 }
@@ -21,12 +21,12 @@ nav ul{
 
 nav ul li{
   display: inline-block;
-  line-height: 80px;
+  line-height: 110px;
   margin: 0px 5px;
 }
 
 nav ul li a{
-  font-size: 17px;
+  font-size: 20px;
   text-decoration: none;
   text-transform: uppercase;
   padding: 7px 13px;
@@ -51,6 +51,14 @@ nav ul li a:hover{
   margin-right: 40px;
   cursor: pointer;
   display: none;
+}
+
+.ecardmaker{
+  word-spacing: normal;
+  position: relative;
+  right: 1100px;
+  font-size: 35px;
+  cursor: default;
 }
 
 #check{
