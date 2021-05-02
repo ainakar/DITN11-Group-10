@@ -162,7 +162,7 @@ nav ul li a:hover{
 .box2{
   position: absolute;
   height: 700px;
-  width: 40%;
+  width: 495px;
   border: 2px solid black;
   border-top: hidden;
   padding: 40px;
@@ -171,7 +171,7 @@ nav ul li a:hover{
   background-image: linear-gradient(to bottom, #36d1dc, #5b86e5);
   text-align: center;
   top: 160px;
-  right: 63px;
+  right: 70px;
 }
 
 #Informal{
