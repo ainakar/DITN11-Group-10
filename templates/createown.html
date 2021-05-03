@@ -500,18 +500,17 @@
       <div id="main">
         <div id="blankcanvas" ondrop="drop(event)" ondragover="allowDrop(event)">
 
-          <p>Text</p>
+          <p class="message"></p>
 
         </div>
       </div>
 
     <div class="boxsec">
       <div class="box1">
-        <label for="text">Add text</label><br>
-        <input type="text" id="text"><br>
+        <input class="storage" type="text" placeholder="Add text here"><br>
         <label>Background Color: </label>
         <div class="color-picker"></div>
-        <button type="button" onclick="changeMe()" id="entry">Enter!</button>
+        <button type="button" onclick="rememberMe()" class="button" id="entry">Save</button>
       </div>
 
     <div class="deco">
@@ -537,8 +536,8 @@
     </div>
 
     <div class="save">
-      <div class="save1">Save this template</div>
-      <button type="button" onclick="rememberMe()" id="button1">Save</button>
+      <!-- <div class="save1">Save this template</div>
+      <button type="button" onclick="rememberMe()" id="button1">Save</button> -->
     </div>
     </div>
 
