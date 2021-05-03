@@ -198,6 +198,10 @@
     var favorites = JSON.parse(localStorage.getItem("favorites"));
 
     document.getElementById("display").innerHTML = localStorage.getItem("favorites");
+
+    if (favorites == null) {
+      alert("Add some templates to favorites!")
+    }
     </script>
   </body>
 </html>
