@@ -60,3 +60,22 @@ pickr.on('change', (color, instance) => {
     console.log(rgbaColor);
     document.querySelector('#blankcanvas').style.background = rgbaColor;
 })
+
+const storageInput = document.querySelector('.storage');
+const message = document.querySelector('.message');
+const button = document.querySelector('.button');
+const storedInput = localStorage.getItem('messageInput3');
+
+if (storageInput) {
+  message.textContent = storedInput;
+}
+
+storageInput.addEventListener('input', letter => {
+  message.textContent = letter.target.value;
+})
+
+const saveToLocalStorage = () => {
+  localStorage.setItem('messageInput3', message.textContent);
+}
+
+button.addEventListener('click', saveToLocalStorage);
