@@ -212,7 +212,7 @@ nav ul li a:hover{
   height: 2200px;;
   width: 100%;
   margin: 0px;
-  background-color: #D2FCF9;
+  background-image: linear-gradient(to bottom right, #4568dc , #b06ab3);
   padding: 10px;
   position: relative;
 }
@@ -221,7 +221,7 @@ nav ul li a:hover{
 .templates{
   height: 50px;
   width: 400px;
-  background-image: linear-gradient(to right, #5AAFF6, #D2FCF9);
+  background-image: linear-gradient(to right, #5AAFF6, #4568dc);
   background-position: center;
   background-size: cover;
   box-sizing: border-box;

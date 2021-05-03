@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
     <style media="screen">
     *{
@@ -108,7 +110,7 @@
           height: 1200px;
           width: 100%;
           margin: 0px;
-          background-color: #D2FCF9;
+          background-image: linear-gradient(to bottom right, #4568dc , #b06ab3);
           padding: 10px;
           position: relative;
           display: flex;
@@ -122,6 +124,7 @@
           height: 50px;
           position:absolute;
           margin-top: 50px;
+          font-family: 'Montserrat', sans-serif;
         }
 
         h2{
@@ -131,6 +134,7 @@
           border: 1px solid black;
           height: 50px;
           padding: 10px;
+          background: #FCD6D6;
         }
 
         #main{
@@ -148,7 +152,9 @@
           background-color: white;
           margin: 90px;
           border: 1px solid black;
-          align-items: center;
+          display: flex;
+          justify-content: center;
+          text-align: center;
         }
 
         .box1{
@@ -344,48 +350,55 @@
           #header{
             font-size: 30px;
             margin-top: 40px;
+            margin-left: 30px;
           }
 
           #blankcanvas{
             position: relative;
             bottom: 550px;
-            left: 250px;
+            left: 180px;
           }
 
           .box1{
             position: relative;
             top: 1000px;
-            left: -450px;
+            left: -350px;
           }
 
           h2{
             position: relative;
             top: 1300px;
             left: 400px;
+            font-size: 18px;
           }
 
           .greetings{
-            position: absolute;
+            position: relative;
             top: 1450px;
             left: 900px;
+
           }
 
           .box2{
             position: relative;
             top: 1350px;
-            right: 500px;
+            right: 350px;
+            width: 200px;
+            height: 400px;
           }
 
           .box3{
             position: relative;
             top: 1350px;
-            right: 490px;
+            right: 350px;
+            width: 200px;
+            height: 400px;
           }
 
           .save{
             position: relative;
             top: 1100px;
-            right: 500px;
+            right: 400px;
           }
 
           .save1{
@@ -395,6 +408,32 @@
           #button1{
             width: 50px;
             height: 20px;
+          }
+
+          #informaldeco{
+            width: 200px;
+            height: 80px;
+          }
+
+          #informaldeco1{
+            width: 200px;
+            height: 80px;
+          }
+
+          #formaldeco{
+            width: 200px;
+            height: 180px;
+          }
+
+          #formaldeco1{
+            width: 200px;
+            height: 180px;
+          }
+
+          .greetings{
+            position: absolute;
+            top: 1410px;
+            left: 600px;
           }
 
         }
