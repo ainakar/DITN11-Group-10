@@ -108,3 +108,21 @@ if ("kepada2" != null) {
 if ("daripada2" != null) {
   document.getElementById("daripada2").innerHTML = localStorage.getItem("sender2");
 }
+
+//favourites
+$('.addToFavBtn').on('click', event => {
+var template = $(event.target).parents()[1].firstElementChild.innerHTML;
+
+var favorites = localStorage.getItem("favorites");
+if (!favorites){
+localStorage.setItem("favorites", JSON.stringify({favTemplate:[]}));
+favorites = JSON.parse(localStorage.getItem("favorites"));
+}else{
+favorites = JSON.parse(favorites);
+}
+
+favorites.favTemplate.push(template);
+
+localStorage.setItem("favorites", JSON.stringify(favorites));
+
+});

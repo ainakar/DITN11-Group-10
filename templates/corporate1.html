@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Corporate 1 Template</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 
     <style media="screen">
@@ -387,7 +388,6 @@
 
     </style>
     </head>
-    <title></title>
   <body>
     <nav>
       <input type="checkbox" id="check">
@@ -403,6 +403,14 @@
 
 <div class="content">
   <div class="main">
+
+    <table>
+      <tr>
+          <td>Corporate 1 Template</td>
+          <td><button class="addToFavBtn">Add to Favorites</button></td>
+      </tr>
+    </table>
+
     <div class="container">
       <div class="box">
         <div id="Company">Tesla</div>
@@ -464,6 +472,7 @@
       </footer>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
     function changeMe(){
       var company = document.getElementById("company").value;
@@ -521,6 +530,24 @@
     if ("Place_3" != null) {
       document.getElementById("Place_3").innerHTML = localStorage.getItem("place_3") || 'Ballroom';
     }
+
+    //favourites
+    $('.addToFavBtn').on('click', event => {
+    var template = $(event.target).parents()[1].firstElementChild.innerHTML;
+
+    var favorites = localStorage.getItem("favorites");
+    if (!favorites){
+    localStorage.setItem("favorites", JSON.stringify({favTemplate:[]}));
+    favorites = JSON.parse(localStorage.getItem("favorites"));
+    }else{
+    favorites = JSON.parse(favorites);
+    }
+
+    favorites.favTemplate.push(template);
+
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+
+    });
      </script>
   </body>
 </html>

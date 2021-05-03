@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Favorites</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 
     <style media="screen">
@@ -163,7 +164,6 @@
 
     </style>
     </head>
-    <title></title>
   <body>
     <nav>
       <input type="checkbox" id="check">
@@ -177,9 +177,9 @@
       </ul>
     </nav>
 
-<div class="content">
+    <div id="display">
 
-  </div>
+    </div>
 
     <div class="footer">
       <footer>
@@ -194,5 +194,10 @@
       </footer>
     </div>
 
+    <script>
+    var favorites = JSON.parse(localStorage.getItem("favorites"));
+
+    document.getElementById("display").innerHTML = localStorage.getItem("favorites");
+    </script>
   </body>
 </html>
