@@ -282,6 +282,7 @@ nav ul li a:hover{
   text-align: center;
   top: 160px;
   right: 70px;
+  overflow: auto;
 }
 
 #Informal{
