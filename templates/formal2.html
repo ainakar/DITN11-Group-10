@@ -286,6 +286,30 @@
         top: 30px;
       }
 
+      .fav{
+        border: 2px solid black;
+        width: 200px;
+        height: 130px;
+        background-color: lightpink;
+        position: relative;
+        top: 800px;
+        right: 450px;
+      }
+
+      .fav1{
+        font-size: 20px;
+        position: relative;
+        top: 20px;
+      }
+
+      #button2{
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+        position: relative;
+        top: 30px;
+      }
+
       @media (max-width: 1050px){
         .main{
           width: 400px;
@@ -306,6 +330,14 @@
           right: 200px;
         }
         .save1{
+          font-size: 16px;
+        }
+        .fav{
+          position: relative;
+          top: 1330px;
+          right: 200px;
+        }
+        .fav1{
           font-size: 16px;
         }
       }
@@ -398,12 +430,6 @@
 
   <div class="content">
     <div class="main">
-      <table>
-        <tr>
-            <td>Formal 2 Template</td>
-            <td><button class="addToFavBtn">Add to Favorites</button></td>
-        </tr>
-      </table>
     <div class="container">
       <div class="box">
         <div id="Name1_2">John Doe</div>
@@ -449,6 +475,12 @@
   <div class="save1">Save this template</div>
   <button type="button" onclick="rememberMe()" id="button1">Save</button>
 </div>
+
+<div class="fav">
+  <div class="fav1">Formal 1 Template</div>
+  <button class="addToFavBtn" id="button2">Add to Favorites</button>
+</div>
+
 </div>
 
 <div class="footer">
